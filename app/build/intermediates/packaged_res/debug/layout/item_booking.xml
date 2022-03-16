@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_baby_sitter"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF3EB">
+
+        <TextView
+            android:id="@+id/babysitterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/placeholder_name"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            android:textColor="#836EF1"
+            card_view:layout_constraintStart_toEndOf="@+id/babysitterImage"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/babysitterImage"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/avatar"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reject"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"
+            android:text="Need help to watched my two children (ages 4 and 7) twice a week for the entire summer."
+            card_view:layout_constraintEnd_toStartOf="@+id/button2"
+            card_view:layout_constraintStart_toEndOf="@+id/babysitterImage"
+            card_view:layout_constraintTop_toBottomOf="@+id/babysitterName" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toStartOf="@+id/button3"
+            card_view:layout_constraintStart_toEndOf="@+id/babysitterImage"
+            card_view:layout_constraintTop_toBottomOf="@+id/textView21">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip4"
+                android:text="Baby Bath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.chip.ChipGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

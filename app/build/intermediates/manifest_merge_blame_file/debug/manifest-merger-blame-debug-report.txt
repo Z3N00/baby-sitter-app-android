@@ -1,0 +1,246 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.babysitter"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+11-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:28:5-79
+11-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:28:22-76
+12    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+12-->[com.android.installreferrer:installreferrer:1.0] /Users/sahil/.gradle/caches/transforms-3/f782577ab387a1b3f250e56753aa56c5/transformed/installreferrer-1.0/AndroidManifest.xml:9:5-110
+12-->[com.android.installreferrer:installreferrer:1.0] /Users/sahil/.gradle/caches/transforms-3/f782577ab387a1b3f250e56753aa56c5/transformed/installreferrer-1.0/AndroidManifest.xml:9:22-107
+13
+14    <application
+14-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:5:5-43:19
+15        android:allowBackup="true"
+15-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:6:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.7.0] /Users/sahil/.gradle/caches/transforms-3/02483169c4c9e0ddffa88758188ac6f1/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:extractNativeLibs="false"
+19        android:icon="@mipmap/ic_launcher"
+19-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:7:9-43
+20        android:label="@string/app_name"
+20-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:8:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:9:9-54
+22        android:supportsRtl="true"
+22-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:10:9-35
+23        android:testOnly="true"
+24        android:theme="@style/Theme.BabySitter" >
+24-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:11:9-48
+25        <activity
+25-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:12:9-16:67
+26            android:name="com.example.babysitter.MainParentsActivity"
+26-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:13:13-48
+27            android:exported="false"
+27-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:14:13-37
+28            android:label="@string/title_activity_main_parents"
+28-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:15:13-64
+29            android:theme="@style/Theme.BabySitter.NoActionBar" />
+29-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:16:13-64
+30        <activity
+30-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:17:9-20:67
+31            android:name="com.example.babysitter.EmailSignUpActivity"
+31-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:18:13-48
+32            android:exported="false"
+32-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:19:13-37
+33            android:theme="@style/Theme.BabySitter.NoActionBar" />
+33-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:20:13-64
+34        <activity
+34-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:21:9-24:67
+35            android:name="com.example.babysitter.EmailSignInActivity"
+35-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:22:13-48
+36            android:exported="false"
+36-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:23:13-37
+37            android:theme="@style/Theme.BabySitter.NoActionBar" />
+37-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:24:13-64
+38        <activity
+38-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:25:9-28:67
+39            android:name="com.example.babysitter.SignupOptionsActivity"
+39-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:26:13-50
+40            android:exported="false"
+40-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:27:13-37
+41            android:theme="@style/Theme.BabySitter.NoActionBar" />
+41-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:28:13-64
+42        <activity
+42-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:29:9-38:28
+43            android:name="com.example.babysitter.SplashScreen"
+43-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:30:13-41
+44            android:exported="true"
+44-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:31:13-36
+45            android:theme="@style/Theme.BabySitter.NoActionBar" >
+45-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:32:13-64
+46            <intent-filter>
+46-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:33:17-37:37
+47                <action android:name="android.intent.action.MAIN" />
+47-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:34:25-77
+47-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:34:33-74
+48
+49                <category android:name="android.intent.category.LAUNCHER" />
+49-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:36:25-85
+49-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:36:35-82
+50            </intent-filter>
+51        </activity>
+52        <activity
+52-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:39:9-42:67
+53            android:name="com.example.babysitter.UserChoiceActivity"
+53-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:40:13-47
+54            android:exported="false"
+54-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:41:13-37
+55            android:theme="@style/Theme.BabySitter.NoActionBar" />
+55-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:42:13-64
+56        <activity
+56-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:30:9-33:66
+57            android:name="com.facebook.FacebookActivity"
+57-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:31:13-57
+58            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+58-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:32:13-96
+59            android:theme="@style/com_facebook_activity_theme" />
+59-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:33:13-63
+60        <activity android:name="com.facebook.CustomTabMainActivity" />
+60-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:34:9-71
+60-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:34:19-68
+61        <activity
+61-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:35:9-49:20
+62            android:name="com.facebook.CustomTabActivity"
+62-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:36:13-58
+63            android:exported="true" >
+63-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:37:13-36
+64            <intent-filter>
+64-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:39:13-48:29
+65                <action android:name="android.intent.action.VIEW" />
+65-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:40:17-69
+65-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:40:25-66
+66
+67                <category android:name="android.intent.category.DEFAULT" />
+67-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:42:17-76
+67-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:42:27-73
+68                <category android:name="android.intent.category.BROWSABLE" />
+68-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:43:17-78
+68-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:43:27-75
+69
+70                <data
+70-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:45:17-47:50
+71                    android:host="cct.com.example.babysitter"
+71-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:46:21-56
+72                    android:scheme="fbconnect" />
+72-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:47:21-47
+73            </intent-filter>
+74        </activity>
+75        <activity
+75-->[com.google.android.gms:play-services-auth:20.1.0] /Users/sahil/.gradle/caches/transforms-3/30144597a49157e8f213a2ebe3712e1c/transformed/play-services-auth-20.1.0/AndroidManifest.xml:23:9-27:75
+76            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+76-->[com.google.android.gms:play-services-auth:20.1.0] /Users/sahil/.gradle/caches/transforms-3/30144597a49157e8f213a2ebe3712e1c/transformed/play-services-auth-20.1.0/AndroidManifest.xml:24:13-93
+77            android:excludeFromRecents="true"
+77-->[com.google.android.gms:play-services-auth:20.1.0] /Users/sahil/.gradle/caches/transforms-3/30144597a49157e8f213a2ebe3712e1c/transformed/play-services-auth-20.1.0/AndroidManifest.xml:25:13-46
+78            android:exported="false"
+78-->[com.google.android.gms:play-services-auth:20.1.0] /Users/sahil/.gradle/caches/transforms-3/30144597a49157e8f213a2ebe3712e1c/transformed/play-services-auth-20.1.0/AndroidManifest.xml:26:13-37
+79            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+79-->[com.google.android.gms:play-services-auth:20.1.0] /Users/sahil/.gradle/caches/transforms-3/30144597a49157e8f213a2ebe3712e1c/transformed/play-services-auth-20.1.0/AndroidManifest.xml:27:13-72
+80        <!--
+81            Service handling Google Sign-In user revocation. For apps that do not integrate with
+82            Google Sign-In, this service will never be started.
+83        -->
+84        <service
+84-->[com.google.android.gms:play-services-auth:20.1.0] /Users/sahil/.gradle/caches/transforms-3/30144597a49157e8f213a2ebe3712e1c/transformed/play-services-auth-20.1.0/AndroidManifest.xml:33:9-37:51
+85            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+85-->[com.google.android.gms:play-services-auth:20.1.0] /Users/sahil/.gradle/caches/transforms-3/30144597a49157e8f213a2ebe3712e1c/transformed/play-services-auth-20.1.0/AndroidManifest.xml:34:13-89
+86            android:exported="true"
+86-->[com.google.android.gms:play-services-auth:20.1.0] /Users/sahil/.gradle/caches/transforms-3/30144597a49157e8f213a2ebe3712e1c/transformed/play-services-auth-20.1.0/AndroidManifest.xml:35:13-36
+87            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+87-->[com.google.android.gms:play-services-auth:20.1.0] /Users/sahil/.gradle/caches/transforms-3/30144597a49157e8f213a2ebe3712e1c/transformed/play-services-auth-20.1.0/AndroidManifest.xml:36:13-107
+88            android:visibleToInstantApps="true" />
+88-->[com.google.android.gms:play-services-auth:20.1.0] /Users/sahil/.gradle/caches/transforms-3/30144597a49157e8f213a2ebe3712e1c/transformed/play-services-auth-20.1.0/AndroidManifest.xml:37:13-48
+89
+90        <activity
+90-->[com.google.android.gms:play-services-base:18.0.1] /Users/sahil/.gradle/caches/transforms-3/53207dac8a8df2118dd13aece775a512/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+91            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+91-->[com.google.android.gms:play-services-base:18.0.1] /Users/sahil/.gradle/caches/transforms-3/53207dac8a8df2118dd13aece775a512/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+92            android:exported="false"
+92-->[com.google.android.gms:play-services-base:18.0.1] /Users/sahil/.gradle/caches/transforms-3/53207dac8a8df2118dd13aece775a512/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+93            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+93-->[com.google.android.gms:play-services-base:18.0.1] /Users/sahil/.gradle/caches/transforms-3/53207dac8a8df2118dd13aece775a512/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+94
+95        <meta-data
+95-->[com.google.android.gms:play-services-basement:18.0.0] /Users/sahil/.gradle/caches/transforms-3/aa48c91a361697853c50874daf57bfd5/transformed/play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+96            android:name="com.google.android.gms.version"
+96-->[com.google.android.gms:play-services-basement:18.0.0] /Users/sahil/.gradle/caches/transforms-3/aa48c91a361697853c50874daf57bfd5/transformed/play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+97            android:value="@integer/google_play_services_version" />
+97-->[com.google.android.gms:play-services-basement:18.0.0] /Users/sahil/.gradle/caches/transforms-3/aa48c91a361697853c50874daf57bfd5/transformed/play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+98
+99        <provider
+99-->[androidx.emoji2:emoji2:1.0.0] /Users/sahil/.gradle/caches/transforms-3/278083bef5dd79cb476949a0d92ce592/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+100            android:name="androidx.startup.InitializationProvider"
+100-->[androidx.emoji2:emoji2:1.0.0] /Users/sahil/.gradle/caches/transforms-3/278083bef5dd79cb476949a0d92ce592/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
+101            android:authorities="com.example.babysitter.androidx-startup"
+101-->[androidx.emoji2:emoji2:1.0.0] /Users/sahil/.gradle/caches/transforms-3/278083bef5dd79cb476949a0d92ce592/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
+102            android:exported="false" >
+102-->[androidx.emoji2:emoji2:1.0.0] /Users/sahil/.gradle/caches/transforms-3/278083bef5dd79cb476949a0d92ce592/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
+103            <meta-data
+103-->[androidx.emoji2:emoji2:1.0.0] /Users/sahil/.gradle/caches/transforms-3/278083bef5dd79cb476949a0d92ce592/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+104                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+104-->[androidx.emoji2:emoji2:1.0.0] /Users/sahil/.gradle/caches/transforms-3/278083bef5dd79cb476949a0d92ce592/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
+105                android:value="androidx.startup" />
+105-->[androidx.emoji2:emoji2:1.0.0] /Users/sahil/.gradle/caches/transforms-3/278083bef5dd79cb476949a0d92ce592/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
+106            <meta-data
+106-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/sahil/.gradle/caches/transforms-3/4d932a67b7be3c4366d55752ebd69384/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+107                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+107-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/sahil/.gradle/caches/transforms-3/4d932a67b7be3c4366d55752ebd69384/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+108                android:value="androidx.startup" />
+108-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/sahil/.gradle/caches/transforms-3/4d932a67b7be3c4366d55752ebd69384/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+109        </provider>
+110        <!--
+111         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+112         with the application context. This config is merged in with the host app's manifest,
+113         but there can only be one provider with the same authority activated at any given
+114         point; so if the end user has two or more different apps that use Facebook SDK, only the
+115         first one will be able to use the provider. To work around this problem, we use the
+116         following placeholder in the authority to identify each host application as if it was
+117         a completely different provider.
+118        -->
+119        <provider
+119-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:41:9-44:40
+120            android:name="com.facebook.internal.FacebookInitProvider"
+120-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:42:13-70
+121            android:authorities="com.example.babysitter.FacebookInitProvider"
+121-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:43:13-72
+122            android:exported="false" />
+122-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:44:13-37
+123
+124        <receiver
+124-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:46:9-52:20
+125            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+125-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:47:13-86
+126            android:exported="false" >
+126-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:48:13-37
+127            <intent-filter>
+127-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:49:13-51:29
+128                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+128-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:50:17-95
+128-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:50:25-92
+129            </intent-filter>
+130        </receiver>
+131        <receiver
+131-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:53:9-59:20
+132            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
+132-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:54:13-118
+133            android:exported="false" >
+133-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:55:13-37
+134            <intent-filter>
+134-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:56:13-58:29
+135                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
+135-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:57:17-103
+135-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:57:25-100
+136            </intent-filter>
+137        </receiver>
+138    </application>
+139
+140</manifest>
