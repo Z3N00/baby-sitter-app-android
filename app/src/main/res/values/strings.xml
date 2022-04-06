@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Baby Care+</string>
+    <string name="email_sign_in">Signup with Email</string>
+    <string name="account_exists_sign_in">Already have an account? Sign In</string>
+    <string name="name_field">Name</string>
+    <string name="email_field">Email</string>
+    <string name="phone_field">Phone</string>
+    <string name="sign_up">Sign Up!</string>
+    <string name="sign_in">Login</string>
+    <string name="address_field">Address</string>
+    <string name="password_field">Password</string>
+    <string name="confirm_password_field">Confirm Password</string>
+    <string name="welcome">Welcome!</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="babysitter">Babysitter</string>
+    <string name="parent">Parent</string>
+    <string name="title_activity_main_parents">MainParentsActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="view_profile">View Profile</string>
+    <string name="placeholder_name">Smith Jones</string>
+    <string name="placeholder_rating">4.5 / 5.0</string>
+    <string name="review_text">
+        He has watched my two children (ages 4 and 7) twice a week for the entire summer,
+        and they were a joy to work with. Smith Jones consistently arrived at
+        our home on time, ready to engage with our kids, with a smile on.
+    </string>
+    <string name="description">
+        Light housework is performed. Engages children in enjoyable activities. Keeps the
+        living and play places of youngsters clean. As needed, assists with schoolwork and
+        tutoring. Feeding, diapering, and clothing infants are all part of the job.
+    </string>
+    <string name="placeholder_address">Montreal, Quebec Canada</string>
+    <string name="booking_done">Thanks for Confirming your Booking!!</string>
+    <string name="placeholder_item">Baby Bath</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="client_id">934415919490-es1utbk19m35b61vcv6odmjqaqnpg9uj.apps.googleusercontent.com</string>
+
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+    <string name="facebook_application_id" translatable="false">1852247284986388</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb1852247284986388</string>
+
+</resources>
