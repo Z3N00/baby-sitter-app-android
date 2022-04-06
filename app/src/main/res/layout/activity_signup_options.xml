@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignupOptionsActivity">
+    tools:context=".activity.SignupOptionsActivity">
 
     <View
         android:id="@+id/rectangle_top"
@@ -44,32 +44,32 @@
         app:layout_constraintTop_toBottomOf="@+id/rectangle_top"
         app:layout_constraintVertical_chainStyle="packed" />
 
-<!--    <com.facebook.login.widget.LoginButton-->
-<!--        android:id="@+id/facebookSignIn"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="48dp"-->
-<!--        android:layout_gravity="center_horizontal"-->
-<!--        android:layout_margin="8dp"-->
-<!--        app:layout_constraintBottom_toTopOf="@+id/googleSignIn"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.5"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/emailSignIn" />-->
-
-    <com.google.android.material.button.MaterialButton
+    <com.facebook.login.widget.LoginButton
         android:id="@+id/facebookSignIn"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_gravity="center_horizontal"
         android:layout_margin="8dp"
-        android:text="Sign in with Facebook"
-        android:backgroundTint="#1877F2"
-        android:textColor="@color/com_facebook_button_text_color"
         app:layout_constraintBottom_toTopOf="@+id/googleSignIn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailSignIn" />
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/facebookSignIn"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_margin="8dp"-->
+<!--        android:text="Sign in with Facebook"-->
+<!--        android:backgroundTint="#1877F2"-->
+<!--        android:textColor="@color/com_facebook_button_text_color"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/googleSignIn"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/emailSignIn" />-->
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/googleSignIn"
