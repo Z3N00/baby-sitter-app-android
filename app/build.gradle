@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -7,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.babysitter"
-        minSdk 23
+        minSdk 26
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -31,6 +32,12 @@ android {
 }
 
 dependencies {
+    implementation platform('com.google.firebase:firebase-bom:29.2.1')
+    implementation 'com.facebook.android:facebook-android-sdk:latest.release'
+    implementation 'com.firebaseui:firebase-ui-auth:7.2.0'
+    implementation "com.squareup.picasso:picasso:2.8"
+
+    implementation 'com.applandeo:material-calendar-view:1.9.0-rc03'
 
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
@@ -43,6 +50,7 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'com.google.firebase:firebase-firestore:23.0.2'
 
 
     testImplementation 'junit:junit:4.13.2'

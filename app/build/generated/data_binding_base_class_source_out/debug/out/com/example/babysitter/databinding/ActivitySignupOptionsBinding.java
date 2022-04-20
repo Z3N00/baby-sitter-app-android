@@ -11,6 +11,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.babysitter.R;
+import com.facebook.login.widget.LoginButton;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.material.button.MaterialButton;
 import java.lang.NullPointerException;
@@ -25,7 +26,7 @@ public final class ActivitySignupOptionsBinding implements ViewBinding {
   public final MaterialButton emailSignIn;
 
   @NonNull
-  public final MaterialButton facebookSignIn;
+  public final LoginButton facebookSignIn;
 
   @NonNull
   public final SignInButton googleSignIn;
@@ -40,7 +41,7 @@ public final class ActivitySignupOptionsBinding implements ViewBinding {
   public final TextView signInText;
 
   private ActivitySignupOptionsBinding(@NonNull ConstraintLayout rootView,
-      @NonNull MaterialButton emailSignIn, @NonNull MaterialButton facebookSignIn,
+      @NonNull MaterialButton emailSignIn, @NonNull LoginButton facebookSignIn,
       @NonNull SignInButton googleSignIn, @NonNull View rectangleBottom, @NonNull View rectangleTop,
       @NonNull TextView signInText) {
     this.rootView = rootView;
@@ -86,7 +87,7 @@ public final class ActivitySignupOptionsBinding implements ViewBinding {
       }
 
       id = R.id.facebookSignIn;
-      MaterialButton facebookSignIn = ViewBindings.findChildViewById(rootView, id);
+      LoginButton facebookSignIn = ViewBindings.findChildViewById(rootView, id);
       if (facebookSignIn == null) {
         break missingId;
       }

@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.babysitter.R;
@@ -22,38 +23,47 @@ public final class FragmentBabySitterDetailsBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final TextView babysitterAddress;
+
+  @NonNull
+  public final TextView babysitterDescription;
+
+  @NonNull
   public final ImageView babysitterImage;
 
   @NonNull
-  public final TextView babysitterName2;
+  public final TextView babysitterName;
 
   @NonNull
-  public final TextView babysitterRating2;
-
-  @NonNull
-  public final TextView babysitterRating3;
+  public final TextView babysitterRating;
 
   @NonNull
   public final MaterialButton checkAvailiability;
 
   @NonNull
-  public final TextView textView9;
+  public final RecyclerView list;
+
+  @NonNull
+  public final TextView textView21;
 
   @NonNull
   public final MaterialButton viewReviews;
 
   private FragmentBabySitterDetailsBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageView babysitterImage, @NonNull TextView babysitterName2,
-      @NonNull TextView babysitterRating2, @NonNull TextView babysitterRating3,
-      @NonNull MaterialButton checkAvailiability, @NonNull TextView textView9,
+      @NonNull TextView babysitterAddress, @NonNull TextView babysitterDescription,
+      @NonNull ImageView babysitterImage, @NonNull TextView babysitterName,
+      @NonNull TextView babysitterRating, @NonNull MaterialButton checkAvailiability,
+      @NonNull RecyclerView list, @NonNull TextView textView21,
       @NonNull MaterialButton viewReviews) {
     this.rootView = rootView;
+    this.babysitterAddress = babysitterAddress;
+    this.babysitterDescription = babysitterDescription;
     this.babysitterImage = babysitterImage;
-    this.babysitterName2 = babysitterName2;
-    this.babysitterRating2 = babysitterRating2;
-    this.babysitterRating3 = babysitterRating3;
+    this.babysitterName = babysitterName;
+    this.babysitterRating = babysitterRating;
     this.checkAvailiability = checkAvailiability;
-    this.textView9 = textView9;
+    this.list = list;
+    this.textView21 = textView21;
     this.viewReviews = viewReviews;
   }
 
@@ -84,27 +94,33 @@ public final class FragmentBabySitterDetailsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.babysitterAddress;
+      TextView babysitterAddress = ViewBindings.findChildViewById(rootView, id);
+      if (babysitterAddress == null) {
+        break missingId;
+      }
+
+      id = R.id.babysitterDescription;
+      TextView babysitterDescription = ViewBindings.findChildViewById(rootView, id);
+      if (babysitterDescription == null) {
+        break missingId;
+      }
+
       id = R.id.babysitterImage;
       ImageView babysitterImage = ViewBindings.findChildViewById(rootView, id);
       if (babysitterImage == null) {
         break missingId;
       }
 
-      id = R.id.babysitterName2;
-      TextView babysitterName2 = ViewBindings.findChildViewById(rootView, id);
-      if (babysitterName2 == null) {
+      id = R.id.babysitterName;
+      TextView babysitterName = ViewBindings.findChildViewById(rootView, id);
+      if (babysitterName == null) {
         break missingId;
       }
 
-      id = R.id.babysitterRating2;
-      TextView babysitterRating2 = ViewBindings.findChildViewById(rootView, id);
-      if (babysitterRating2 == null) {
-        break missingId;
-      }
-
-      id = R.id.babysitterRating3;
-      TextView babysitterRating3 = ViewBindings.findChildViewById(rootView, id);
-      if (babysitterRating3 == null) {
+      id = R.id.babysitterRating;
+      TextView babysitterRating = ViewBindings.findChildViewById(rootView, id);
+      if (babysitterRating == null) {
         break missingId;
       }
 
@@ -114,9 +130,15 @@ public final class FragmentBabySitterDetailsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView9;
-      TextView textView9 = ViewBindings.findChildViewById(rootView, id);
-      if (textView9 == null) {
+      id = R.id.list;
+      RecyclerView list = ViewBindings.findChildViewById(rootView, id);
+      if (list == null) {
+        break missingId;
+      }
+
+      id = R.id.textView21;
+      TextView textView21 = ViewBindings.findChildViewById(rootView, id);
+      if (textView21 == null) {
         break missingId;
       }
 
@@ -126,9 +148,9 @@ public final class FragmentBabySitterDetailsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentBabySitterDetailsBinding((ConstraintLayout) rootView, babysitterImage,
-          babysitterName2, babysitterRating2, babysitterRating3, checkAvailiability, textView9,
-          viewReviews);
+      return new FragmentBabySitterDetailsBinding((ConstraintLayout) rootView, babysitterAddress,
+          babysitterDescription, babysitterImage, babysitterName, babysitterRating,
+          checkAvailiability, list, textView21, viewReviews);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

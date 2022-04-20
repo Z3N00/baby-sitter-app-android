@@ -21,25 +21,24 @@ public final class ItemCheckoutBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
-  public final Button button2;
+  public final CardView itemBabySitter;
 
   @NonNull
-  public final CardView itemBabySitter;
+  public final TextView price;
+
+  @NonNull
+  public final Button select;
 
   @NonNull
   public final TextView serviceName;
 
-  @NonNull
-  public final TextView textView21;
-
-  private ItemCheckoutBinding(@NonNull CardView rootView, @NonNull Button button2,
-      @NonNull CardView itemBabySitter, @NonNull TextView serviceName,
-      @NonNull TextView textView21) {
+  private ItemCheckoutBinding(@NonNull CardView rootView, @NonNull CardView itemBabySitter,
+      @NonNull TextView price, @NonNull Button select, @NonNull TextView serviceName) {
     this.rootView = rootView;
-    this.button2 = button2;
     this.itemBabySitter = itemBabySitter;
+    this.price = price;
+    this.select = select;
     this.serviceName = serviceName;
-    this.textView21 = textView21;
   }
 
   @Override
@@ -69,13 +68,19 @@ public final class ItemCheckoutBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button2;
-      Button button2 = ViewBindings.findChildViewById(rootView, id);
-      if (button2 == null) {
+      CardView itemBabySitter = (CardView) rootView;
+
+      id = R.id.price;
+      TextView price = ViewBindings.findChildViewById(rootView, id);
+      if (price == null) {
         break missingId;
       }
 
-      CardView itemBabySitter = (CardView) rootView;
+      id = R.id.select;
+      Button select = ViewBindings.findChildViewById(rootView, id);
+      if (select == null) {
+        break missingId;
+      }
 
       id = R.id.serviceName;
       TextView serviceName = ViewBindings.findChildViewById(rootView, id);
@@ -83,14 +88,8 @@ public final class ItemCheckoutBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView21;
-      TextView textView21 = ViewBindings.findChildViewById(rootView, id);
-      if (textView21 == null) {
-        break missingId;
-      }
-
-      return new ItemCheckoutBinding((CardView) rootView, button2, itemBabySitter, serviceName,
-          textView21);
+      return new ItemCheckoutBinding((CardView) rootView, itemBabySitter, price, select,
+          serviceName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

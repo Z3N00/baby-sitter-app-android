@@ -4,9 +4,9 @@ package com.example.babysitter.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import androidx.viewpager2.widget.ViewPager2;
@@ -19,7 +19,7 @@ import java.lang.String;
 
 public final class ActivityMainParentsBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final LinearLayout rootView;
 
   @NonNull
   public final TabLayout tabs;
@@ -30,7 +30,7 @@ public final class ActivityMainParentsBinding implements ViewBinding {
   @NonNull
   public final ViewPager2 viewPager;
 
-  private ActivityMainParentsBinding(@NonNull ConstraintLayout rootView, @NonNull TabLayout tabs,
+  private ActivityMainParentsBinding(@NonNull LinearLayout rootView, @NonNull TabLayout tabs,
       @NonNull MaterialToolbar title, @NonNull ViewPager2 viewPager) {
     this.rootView = rootView;
     this.tabs = tabs;
@@ -40,7 +40,7 @@ public final class ActivityMainParentsBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -83,7 +83,7 @@ public final class ActivityMainParentsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainParentsBinding((ConstraintLayout) rootView, tabs, title, viewPager);
+      return new ActivityMainParentsBinding((LinearLayout) rootView, tabs, title, viewPager);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

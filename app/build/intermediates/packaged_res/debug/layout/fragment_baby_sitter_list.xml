@@ -15,6 +15,6 @@
         android:layout_marginRight="16dp"
         app:layoutManager="LinearLayoutManager"
         android:name="com.example.babysitter.BabySitterListFragment"
-        tools:context=".BabySitterListFragment"
+        tools:context=".fragment.BabySitterListFragment"
         tools:listitem="@layout/item_baby_sitter" />
 </androidx.constraintlayout.widget.ConstraintLayout>

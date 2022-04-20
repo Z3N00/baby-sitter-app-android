@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+            "outputFile": "/home/lucifer/AndroidStudioProjects/BabySitter/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h550dp-port-v13/values-h550dp-port-v13.xml",
             "map": [
                 {
-                    "source": "/Users/sahil/.gradle/caches/transforms-3/8c8bd08bd5ab439882315c15d3205b6b/transformed/material-1.5.0/res/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+                    "source": "/home/lucifer/.gradle/caches/transforms-3/64996b01c2ff70eb54c48da9727f57ae/transformed/material-1.5.0/res/values-h550dp-port-v13/values-h550dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

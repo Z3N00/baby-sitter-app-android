@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v25/values-v25.xml",
+            "outputFile": "/home/lucifer/AndroidStudioProjects/BabySitter/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v25/values-v25.xml",
             "map": [
                 {
-                    "source": "/Users/sahil/.gradle/caches/transforms-3/f791586eb8e3cddcf33fb36842d7675a/transformed/appcompat-1.4.1/res/values-v25/values-v25.xml",
+                    "source": "/home/lucifer/.gradle/caches/transforms-3/761b5255922340da579bf89e0bb80529/transformed/appcompat-1.4.1/res/values-v25/values-v25.xml",
                     "from": {
                         "startLines": "2,3,4,6",
                         "startColumns": "4,4,4,4",

@@ -4,6 +4,7 @@ package com.example.babysitter.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,15 +25,20 @@ public final class ItemMessageBinding implements ViewBinding {
   public final TextView content;
 
   @NonNull
+  public final ImageButton delete;
+
+  @NonNull
   public final TextView reviewerName;
 
   @NonNull
   public final ShapeableImageView shapeableImageView;
 
   private ItemMessageBinding(@NonNull ConstraintLayout rootView, @NonNull TextView content,
-      @NonNull TextView reviewerName, @NonNull ShapeableImageView shapeableImageView) {
+      @NonNull ImageButton delete, @NonNull TextView reviewerName,
+      @NonNull ShapeableImageView shapeableImageView) {
     this.rootView = rootView;
     this.content = content;
+    this.delete = delete;
     this.reviewerName = reviewerName;
     this.shapeableImageView = shapeableImageView;
   }
@@ -70,6 +76,12 @@ public final class ItemMessageBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.delete;
+      ImageButton delete = ViewBindings.findChildViewById(rootView, id);
+      if (delete == null) {
+        break missingId;
+      }
+
       id = R.id.reviewerName;
       TextView reviewerName = ViewBindings.findChildViewById(rootView, id);
       if (reviewerName == null) {
@@ -82,7 +94,7 @@ public final class ItemMessageBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemMessageBinding((ConstraintLayout) rootView, content, reviewerName,
+      return new ItemMessageBinding((ConstraintLayout) rootView, content, delete, reviewerName,
           shapeableImageView);
     }
     String missingId = rootView.getResources().getResourceName(id);

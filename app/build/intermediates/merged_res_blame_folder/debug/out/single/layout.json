@@ -1,86 +1,94 @@
 [
     {
-        "merged": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_main_parents.xml",
-        "source": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/res/layout/fragment_main_parents.xml"
+        "merged": "/home/lucifer/AndroidStudioProjects/BabySitter/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_profile_babysitter.xml",
+        "source": "/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/res/layout/fragment_profile_babysitter.xml"
     },
     {
-        "merged": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_user_choice.xml",
-        "source": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/res/layout/activity_user_choice.xml"
+        "merged": "/home/lucifer/AndroidStudioProjects/BabySitter/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_email_sign_in.xml",
+        "source": "/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/res/layout/activity_email_sign_in.xml"
     },
     {
-        "merged": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_baby_sitter_list.xml",
-        "source": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/res/layout/fragment_baby_sitter_list.xml"
+        "merged": "/home/lucifer/AndroidStudioProjects/BabySitter/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_review.xml",
+        "source": "/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/res/layout/item_review.xml"
     },
     {
-        "merged": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_checkout.xml",
-        "source": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/res/layout/item_checkout.xml"
+        "merged": "/home/lucifer/AndroidStudioProjects/BabySitter/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_message.xml",
+        "source": "/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/res/layout/item_message.xml"
     },
     {
-        "merged": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_checkout.xml",
-        "source": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/res/layout/fragment_checkout.xml"
+        "merged": "/home/lucifer/AndroidStudioProjects/BabySitter/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_reviews_list.xml",
+        "source": "/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/res/layout/fragment_reviews_list.xml"
     },
     {
-        "merged": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_reviews_list.xml",
-        "source": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/res/layout/fragment_reviews_list.xml"
+        "merged": "/home/lucifer/AndroidStudioProjects/BabySitter/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_profile.xml",
+        "source": "/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/res/layout/fragment_profile.xml"
     },
     {
-        "merged": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_booking_list.xml",
-        "source": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/res/layout/fragment_booking_list.xml"
+        "merged": "/home/lucifer/AndroidStudioProjects/BabySitter/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_baby_sitter_details.xml",
+        "source": "/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/res/layout/fragment_baby_sitter_details.xml"
     },
     {
-        "merged": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main_parents.xml",
-        "source": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/res/layout/activity_main_parents.xml"
+        "merged": "/home/lucifer/AndroidStudioProjects/BabySitter/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_baby_sitter_list.xml",
+        "source": "/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/res/layout/fragment_baby_sitter_list.xml"
     },
     {
-        "merged": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_booking.xml",
-        "source": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/res/layout/item_booking.xml"
+        "merged": "/home/lucifer/AndroidStudioProjects/BabySitter/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_checkout.xml",
+        "source": "/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/res/layout/item_checkout.xml"
     },
     {
-        "merged": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_signup_options.xml",
-        "source": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/res/layout/activity_signup_options.xml"
+        "merged": "/home/lucifer/AndroidStudioProjects/BabySitter/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_baby_sitter_add.xml",
+        "source": "/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/res/layout/activity_baby_sitter_add.xml"
     },
     {
-        "merged": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_availability.xml",
-        "source": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/res/layout/fragment_availability.xml"
+        "merged": "/home/lucifer/AndroidStudioProjects/BabySitter/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_chat_list.xml",
+        "source": "/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/res/layout/fragment_chat_list.xml"
     },
     {
-        "merged": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_splash_screen.xml",
-        "source": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/res/layout/activity_splash_screen.xml"
+        "merged": "/home/lucifer/AndroidStudioProjects/BabySitter/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_checkout.xml",
+        "source": "/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/res/layout/fragment_checkout.xml"
     },
     {
-        "merged": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_profile.xml",
-        "source": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/res/layout/fragment_profile.xml"
+        "merged": "/home/lucifer/AndroidStudioProjects/BabySitter/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_user_choice.xml",
+        "source": "/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/res/layout/activity_user_choice.xml"
     },
     {
-        "merged": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_baby_sitter_details.xml",
-        "source": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/res/layout/fragment_baby_sitter_details.xml"
+        "merged": "/home/lucifer/AndroidStudioProjects/BabySitter/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_availability.xml",
+        "source": "/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/res/layout/fragment_availability.xml"
     },
     {
-        "merged": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_email_sign_up.xml",
-        "source": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/res/layout/activity_email_sign_up.xml"
+        "merged": "/home/lucifer/AndroidStudioProjects/BabySitter/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_splash_screen.xml",
+        "source": "/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/res/layout/activity_splash_screen.xml"
     },
     {
-        "merged": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_booking_completed.xml",
-        "source": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/res/layout/fragment_booking_completed.xml"
+        "merged": "/home/lucifer/AndroidStudioProjects/BabySitter/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_baby_sitter.xml",
+        "source": "/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/res/layout/item_baby_sitter.xml"
     },
     {
-        "merged": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_review.xml",
-        "source": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/res/layout/item_review.xml"
+        "merged": "/home/lucifer/AndroidStudioProjects/BabySitter/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_booking_completed.xml",
+        "source": "/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/res/layout/fragment_booking_completed.xml"
     },
     {
-        "merged": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_email_sign_in.xml",
-        "source": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/res/layout/activity_email_sign_in.xml"
+        "merged": "/home/lucifer/AndroidStudioProjects/BabySitter/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_booking.xml",
+        "source": "/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/res/layout/item_booking.xml"
     },
     {
-        "merged": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_baby_sitter.xml",
-        "source": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/res/layout/item_baby_sitter.xml"
+        "merged": "/home/lucifer/AndroidStudioProjects/BabySitter/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_email_sign_up.xml",
+        "source": "/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/res/layout/activity_email_sign_up.xml"
     },
     {
-        "merged": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_chat_list.xml",
-        "source": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/res/layout/fragment_chat_list.xml"
+        "merged": "/home/lucifer/AndroidStudioProjects/BabySitter/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_booking_list.xml",
+        "source": "/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/res/layout/fragment_booking_list.xml"
     },
     {
-        "merged": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_message.xml",
-        "source": "/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/res/layout/item_message.xml"
+        "merged": "/home/lucifer/AndroidStudioProjects/BabySitter/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main_parents.xml",
+        "source": "/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/res/layout/activity_main_parents.xml"
+    },
+    {
+        "merged": "/home/lucifer/AndroidStudioProjects/BabySitter/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_add_review.xml",
+        "source": "/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/res/layout/fragment_add_review.xml"
+    },
+    {
+        "merged": "/home/lucifer/AndroidStudioProjects/BabySitter/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_signup_options.xml",
+        "source": "/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/res/layout/activity_signup_options.xml"
     }
 ]

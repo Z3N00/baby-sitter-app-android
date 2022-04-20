@@ -5,242 +5,530 @@
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="23"
-8-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml
+8        android:minSdkVersion="26"
+8-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml
+9-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml
 10
-11    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
-11-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:28:5-79
-11-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:28:22-76
-12    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-12-->[com.android.installreferrer:installreferrer:1.0] /Users/sahil/.gradle/caches/transforms-3/f782577ab387a1b3f250e56753aa56c5/transformed/installreferrer-1.0/AndroidManifest.xml:9:5-110
-12-->[com.android.installreferrer:installreferrer:1.0] /Users/sahil/.gradle/caches/transforms-3/f782577ab387a1b3f250e56753aa56c5/transformed/installreferrer-1.0/AndroidManifest.xml:9:22-107
-13
-14    <application
-14-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:5:5-43:19
-15        android:allowBackup="true"
-15-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:6:9-35
-16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-16-->[androidx.core:core:1.7.0] /Users/sahil/.gradle/caches/transforms-3/02483169c4c9e0ddffa88758188ac6f1/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
-17        android:debuggable="true"
-18        android:extractNativeLibs="false"
-19        android:icon="@mipmap/ic_launcher"
-19-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:7:9-43
-20        android:label="@string/app_name"
-20-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:8:9-41
-21        android:roundIcon="@mipmap/ic_launcher_round"
-21-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:9:9-54
-22        android:supportsRtl="true"
-22-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:10:9-35
-23        android:testOnly="true"
-24        android:theme="@style/Theme.BabySitter" >
-24-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:11:9-48
-25        <activity
-25-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:12:9-16:67
-26            android:name="com.example.babysitter.MainParentsActivity"
-26-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:13:13-48
-27            android:exported="false"
-27-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:14:13-37
-28            android:label="@string/title_activity_main_parents"
-28-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:15:13-64
-29            android:theme="@style/Theme.BabySitter.NoActionBar" />
-29-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:16:13-64
-30        <activity
-30-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:17:9-20:67
-31            android:name="com.example.babysitter.EmailSignUpActivity"
-31-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:18:13-48
-32            android:exported="false"
-32-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:19:13-37
-33            android:theme="@style/Theme.BabySitter.NoActionBar" />
-33-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:20:13-64
-34        <activity
-34-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:21:9-24:67
-35            android:name="com.example.babysitter.EmailSignInActivity"
-35-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:22:13-48
-36            android:exported="false"
-36-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:23:13-37
-37            android:theme="@style/Theme.BabySitter.NoActionBar" />
-37-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:24:13-64
-38        <activity
-38-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:25:9-28:67
-39            android:name="com.example.babysitter.SignupOptionsActivity"
-39-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:26:13-50
-40            android:exported="false"
-40-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:27:13-37
-41            android:theme="@style/Theme.BabySitter.NoActionBar" />
-41-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:28:13-64
-42        <activity
-42-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:29:9-38:28
-43            android:name="com.example.babysitter.SplashScreen"
-43-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:30:13-41
-44            android:exported="true"
-44-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:31:13-36
-45            android:theme="@style/Theme.BabySitter.NoActionBar" >
-45-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:32:13-64
-46            <intent-filter>
-46-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:33:17-37:37
-47                <action android:name="android.intent.action.MAIN" />
-47-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:34:25-77
-47-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:34:33-74
-48
-49                <category android:name="android.intent.category.LAUNCHER" />
-49-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:36:25-85
-49-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:36:35-82
-50            </intent-filter>
-51        </activity>
+11    <queries>
+11-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:48:5-51:15
+12        <provider android:authorities="com.facebook.katana.provider.PlatformProvider" /> <!-- allows app to access Facebook app features -->
+12-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:49:9-89
+12-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:49:19-86
+13        <provider android:authorities="com.facebook.orca.provider.PlatformProvider" /> <!-- allows sharing to Messenger app -->
+13-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:49:9-89
+13-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:49:19-86
+14    </queries>
+15
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:12:5-79
+16-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:12:22-76
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:13:5-67
+17-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:13:22-64
+18    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+18-->[com.facebook.android:facebook-core:13.1.0] /home/lucifer/.gradle/caches/transforms-3/44150eebac5ba08672cb911ad5f4a59a/transformed/facebook-core-13.1.0/AndroidManifest.xml:28:5-79
+18-->[com.facebook.android:facebook-core:13.1.0] /home/lucifer/.gradle/caches/transforms-3/44150eebac5ba08672cb911ad5f4a59a/transformed/facebook-core-13.1.0/AndroidManifest.xml:28:22-76
+19    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+19-->[com.android.installreferrer:installreferrer:1.0] /home/lucifer/.gradle/caches/transforms-3/30bc61d15f4a5719a8cb5fbfd678f712/transformed/installreferrer-1.0/AndroidManifest.xml:9:5-110
+19-->[com.android.installreferrer:installreferrer:1.0] /home/lucifer/.gradle/caches/transforms-3/30bc61d15f4a5719a8cb5fbfd678f712/transformed/installreferrer-1.0/AndroidManifest.xml:9:22-107
+20
+21    <application
+21-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:5:5-46:19
+22        android:allowBackup="true"
+22-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:6:9-35
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.9.0-alpha02] /home/lucifer/.gradle/caches/transforms-3/38eafdf0ff31dc0535a03b2b6254555d/transformed/core-1.9.0-alpha02/AndroidManifest.xml:24:18-86
+24        android:debuggable="true"
+25        android:extractNativeLibs="false"
+26        android:icon="@mipmap/ic_launcher"
+26-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:7:9-43
+27        android:label="@string/app_name"
+27-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:8:9-41
+28        android:roundIcon="@mipmap/ic_launcher_round"
+28-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:9:9-54
+29        android:supportsRtl="true"
+29-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:10:9-35
+30        android:testOnly="true"
+31        android:theme="@style/Theme.BabySitter" >
+31-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:11:9-48
+32        <activity
+32-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:12:9-14:40
+33            android:name="com.example.babysitter.activity.BabySitterAddActivity"
+33-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:13:13-59
+34            android:exported="false" />
+34-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:14:13-37
+35        <activity
+35-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:15:9-19:67
+36            android:name="com.example.babysitter.activity.MainActivity"
+36-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:16:13-50
+37            android:exported="false"
+37-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:17:13-37
+38            android:label="@string/title_activity_main_parents"
+38-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:18:13-64
+39            android:theme="@style/Theme.BabySitter.NoActionBar" />
+39-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:19:13-64
+40        <activity
+40-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:20:9-23:67
+41            android:name="com.example.babysitter.activity.EmailSignUpActivity"
+41-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:21:13-57
+42            android:exported="false"
+42-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:22:13-37
+43            android:theme="@style/Theme.BabySitter.NoActionBar" />
+43-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:23:13-64
+44        <activity
+44-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:24:9-27:67
+45            android:name="com.example.babysitter.activity.EmailSignInActivity"
+45-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:25:13-57
+46            android:exported="false"
+46-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:26:13-37
+47            android:theme="@style/Theme.BabySitter.NoActionBar" />
+47-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:27:13-64
+48        <activity
+48-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:28:9-31:67
+49            android:name="com.example.babysitter.activity.SignupOptionsActivity"
+49-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:29:13-59
+50            android:exported="false"
+50-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:30:13-37
+51            android:theme="@style/Theme.BabySitter.NoActionBar" />
+51-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:31:13-64
 52        <activity
-52-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:39:9-42:67
-53            android:name="com.example.babysitter.UserChoiceActivity"
-53-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:40:13-47
-54            android:exported="false"
-54-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:41:13-37
-55            android:theme="@style/Theme.BabySitter.NoActionBar" />
-55-->/Users/sahil/AndroidStudioProjects/baby-sitter-app-android/app/src/main/AndroidManifest.xml:42:13-64
-56        <activity
-56-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:30:9-33:66
-57            android:name="com.facebook.FacebookActivity"
-57-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:31:13-57
-58            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-58-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:32:13-96
-59            android:theme="@style/com_facebook_activity_theme" />
-59-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:33:13-63
-60        <activity android:name="com.facebook.CustomTabMainActivity" />
-60-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:34:9-71
-60-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:34:19-68
-61        <activity
-61-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:35:9-49:20
-62            android:name="com.facebook.CustomTabActivity"
-62-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:36:13-58
-63            android:exported="true" >
-63-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:37:13-36
-64            <intent-filter>
-64-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:39:13-48:29
-65                <action android:name="android.intent.action.VIEW" />
-65-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:40:17-69
-65-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:40:25-66
+52-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:32:9-41:20
+53            android:name="com.example.babysitter.activity.SplashScreenActivity"
+53-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:33:13-58
+54            android:exported="true"
+54-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:34:13-36
+55            android:theme="@style/Theme.BabySitter.NoActionBar" >
+55-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:35:13-64
+56            <intent-filter>
+56-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:36:13-40:29
+57                <action android:name="android.intent.action.MAIN" />
+57-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:37:17-69
+57-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:37:25-66
+58
+59                <category android:name="android.intent.category.LAUNCHER" />
+59-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:39:17-77
+59-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:39:27-74
+60            </intent-filter>
+61        </activity>
+62        <activity
+62-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:42:9-45:67
+63            android:name="com.example.babysitter.activity.UserChoiceActivity"
+63-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:43:13-56
+64            android:exported="false"
+64-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:44:13-37
+65            android:theme="@style/Theme.BabySitter.NoActionBar" />
+65-->/home/lucifer/AndroidStudioProjects/BabySitter/app/src/main/AndroidManifest.xml:45:13-64
 66
-67                <category android:name="android.intent.category.DEFAULT" />
-67-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:42:17-76
-67-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:42:27-73
-68                <category android:name="android.intent.category.BROWSABLE" />
-68-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:43:17-78
-68-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:43:27-75
-69
-70                <data
-70-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:45:17-47:50
-71                    android:host="cct.com.example.babysitter"
-71-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:46:21-56
-72                    android:scheme="fbconnect" />
-72-->[com.facebook.android:facebook-common:13.0.0] /Users/sahil/.gradle/caches/transforms-3/b4a5178eda60744821462181825d4876/transformed/facebook-common-13.0.0/AndroidManifest.xml:47:21-47
-73            </intent-filter>
-74        </activity>
-75        <activity
-75-->[com.google.android.gms:play-services-auth:20.1.0] /Users/sahil/.gradle/caches/transforms-3/30144597a49157e8f213a2ebe3712e1c/transformed/play-services-auth-20.1.0/AndroidManifest.xml:23:9-27:75
-76            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-76-->[com.google.android.gms:play-services-auth:20.1.0] /Users/sahil/.gradle/caches/transforms-3/30144597a49157e8f213a2ebe3712e1c/transformed/play-services-auth-20.1.0/AndroidManifest.xml:24:13-93
-77            android:excludeFromRecents="true"
-77-->[com.google.android.gms:play-services-auth:20.1.0] /Users/sahil/.gradle/caches/transforms-3/30144597a49157e8f213a2ebe3712e1c/transformed/play-services-auth-20.1.0/AndroidManifest.xml:25:13-46
-78            android:exported="false"
-78-->[com.google.android.gms:play-services-auth:20.1.0] /Users/sahil/.gradle/caches/transforms-3/30144597a49157e8f213a2ebe3712e1c/transformed/play-services-auth-20.1.0/AndroidManifest.xml:26:13-37
-79            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-79-->[com.google.android.gms:play-services-auth:20.1.0] /Users/sahil/.gradle/caches/transforms-3/30144597a49157e8f213a2ebe3712e1c/transformed/play-services-auth-20.1.0/AndroidManifest.xml:27:13-72
-80        <!--
-81            Service handling Google Sign-In user revocation. For apps that do not integrate with
-82            Google Sign-In, this service will never be started.
-83        -->
-84        <service
-84-->[com.google.android.gms:play-services-auth:20.1.0] /Users/sahil/.gradle/caches/transforms-3/30144597a49157e8f213a2ebe3712e1c/transformed/play-services-auth-20.1.0/AndroidManifest.xml:33:9-37:51
-85            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-85-->[com.google.android.gms:play-services-auth:20.1.0] /Users/sahil/.gradle/caches/transforms-3/30144597a49157e8f213a2ebe3712e1c/transformed/play-services-auth-20.1.0/AndroidManifest.xml:34:13-89
-86            android:exported="true"
-86-->[com.google.android.gms:play-services-auth:20.1.0] /Users/sahil/.gradle/caches/transforms-3/30144597a49157e8f213a2ebe3712e1c/transformed/play-services-auth-20.1.0/AndroidManifest.xml:35:13-36
-87            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-87-->[com.google.android.gms:play-services-auth:20.1.0] /Users/sahil/.gradle/caches/transforms-3/30144597a49157e8f213a2ebe3712e1c/transformed/play-services-auth-20.1.0/AndroidManifest.xml:36:13-107
-88            android:visibleToInstantApps="true" />
-88-->[com.google.android.gms:play-services-auth:20.1.0] /Users/sahil/.gradle/caches/transforms-3/30144597a49157e8f213a2ebe3712e1c/transformed/play-services-auth-20.1.0/AndroidManifest.xml:37:13-48
-89
-90        <activity
-90-->[com.google.android.gms:play-services-base:18.0.1] /Users/sahil/.gradle/caches/transforms-3/53207dac8a8df2118dd13aece775a512/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
-91            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-91-->[com.google.android.gms:play-services-base:18.0.1] /Users/sahil/.gradle/caches/transforms-3/53207dac8a8df2118dd13aece775a512/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
-92            android:exported="false"
-92-->[com.google.android.gms:play-services-base:18.0.1] /Users/sahil/.gradle/caches/transforms-3/53207dac8a8df2118dd13aece775a512/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
-93            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-93-->[com.google.android.gms:play-services-base:18.0.1] /Users/sahil/.gradle/caches/transforms-3/53207dac8a8df2118dd13aece775a512/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
-94
-95        <meta-data
-95-->[com.google.android.gms:play-services-basement:18.0.0] /Users/sahil/.gradle/caches/transforms-3/aa48c91a361697853c50874daf57bfd5/transformed/play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
-96            android:name="com.google.android.gms.version"
-96-->[com.google.android.gms:play-services-basement:18.0.0] /Users/sahil/.gradle/caches/transforms-3/aa48c91a361697853c50874daf57bfd5/transformed/play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
-97            android:value="@integer/google_play_services_version" />
-97-->[com.google.android.gms:play-services-basement:18.0.0] /Users/sahil/.gradle/caches/transforms-3/aa48c91a361697853c50874daf57bfd5/transformed/play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
-98
-99        <provider
-99-->[androidx.emoji2:emoji2:1.0.0] /Users/sahil/.gradle/caches/transforms-3/278083bef5dd79cb476949a0d92ce592/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
-100            android:name="androidx.startup.InitializationProvider"
-100-->[androidx.emoji2:emoji2:1.0.0] /Users/sahil/.gradle/caches/transforms-3/278083bef5dd79cb476949a0d92ce592/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
-101            android:authorities="com.example.babysitter.androidx-startup"
-101-->[androidx.emoji2:emoji2:1.0.0] /Users/sahil/.gradle/caches/transforms-3/278083bef5dd79cb476949a0d92ce592/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
-102            android:exported="false" >
-102-->[androidx.emoji2:emoji2:1.0.0] /Users/sahil/.gradle/caches/transforms-3/278083bef5dd79cb476949a0d92ce592/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
-103            <meta-data
-103-->[androidx.emoji2:emoji2:1.0.0] /Users/sahil/.gradle/caches/transforms-3/278083bef5dd79cb476949a0d92ce592/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
-104                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-104-->[androidx.emoji2:emoji2:1.0.0] /Users/sahil/.gradle/caches/transforms-3/278083bef5dd79cb476949a0d92ce592/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
-105                android:value="androidx.startup" />
-105-->[androidx.emoji2:emoji2:1.0.0] /Users/sahil/.gradle/caches/transforms-3/278083bef5dd79cb476949a0d92ce592/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
-106            <meta-data
-106-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/sahil/.gradle/caches/transforms-3/4d932a67b7be3c4366d55752ebd69384/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
-107                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-107-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/sahil/.gradle/caches/transforms-3/4d932a67b7be3c4366d55752ebd69384/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
-108                android:value="androidx.startup" />
-108-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/sahil/.gradle/caches/transforms-3/4d932a67b7be3c4366d55752ebd69384/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
-109        </provider>
-110        <!--
-111         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
-112         with the application context. This config is merged in with the host app's manifest,
-113         but there can only be one provider with the same authority activated at any given
-114         point; so if the end user has two or more different apps that use Facebook SDK, only the
-115         first one will be able to use the provider. To work around this problem, we use the
-116         following placeholder in the authority to identify each host application as if it was
-117         a completely different provider.
-118        -->
-119        <provider
-119-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:41:9-44:40
-120            android:name="com.facebook.internal.FacebookInitProvider"
-120-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:42:13-70
-121            android:authorities="com.example.babysitter.FacebookInitProvider"
-121-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:43:13-72
-122            android:exported="false" />
-122-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:44:13-37
-123
-124        <receiver
-124-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:46:9-52:20
-125            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
-125-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:47:13-86
-126            android:exported="false" >
-126-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:48:13-37
-127            <intent-filter>
-127-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:49:13-51:29
-128                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
-128-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:50:17-95
-128-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:50:25-92
-129            </intent-filter>
-130        </receiver>
-131        <receiver
-131-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:53:9-59:20
-132            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
-132-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:54:13-118
-133            android:exported="false" >
-133-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:55:13-37
-134            <intent-filter>
-134-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:56:13-58:29
-135                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
-135-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:57:17-103
-135-->[com.facebook.android:facebook-core:13.0.0] /Users/sahil/.gradle/caches/transforms-3/6db580b7d90067a2f93c24879d5c42af/transformed/facebook-core-13.0.0/AndroidManifest.xml:57:25-100
-136            </intent-filter>
-137        </receiver>
-138    </application>
-139
-140</manifest>
+67        <meta-data
+67-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:16:9-18:69
+68            android:name="com.google.android.gms.version"
+68-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:17:13-58
+69            android:value="@integer/google_play_services_version" />
+69-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:18:13-66
+70        <meta-data
+70-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:19:9-21:63
+71            android:name="com.facebook.sdk.ApplicationId"
+71-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:20:13-58
+72            android:value="@string/facebook_application_id" />
+72-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:21:13-60
+73
+74        <activity
+74-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:23:9-27:61
+75            android:name="com.firebase.ui.auth.KickoffActivity"
+75-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:24:13-64
+76            android:exported="false"
+76-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:25:13-37
+77            android:label=""
+77-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:26:13-29
+78            android:theme="@style/FirebaseUI.Transparent" />
+78-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:27:13-58
+79        <activity
+79-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:28:9-32:61
+80            android:name="com.firebase.ui.auth.ui.idp.SingleSignInActivity"
+80-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:29:13-76
+81            android:exported="false"
+81-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:30:13-37
+82            android:label=""
+82-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:31:13-29
+83            android:theme="@style/FirebaseUI.Transparent" />
+83-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:32:13-58
+84        <activity
+84-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:33:9-37:61
+85            android:name="com.firebase.ui.auth.ui.credentials.CredentialSaveActivity"
+85-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:34:13-86
+86            android:exported="false"
+86-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:35:13-37
+87            android:label=""
+87-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:36:13-29
+88            android:theme="@style/FirebaseUI.Transparent" />
+88-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:37:13-58
+89        <activity
+89-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:38:9-42:58
+90            android:name="com.firebase.ui.auth.ui.email.RecoverPasswordActivity"
+90-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:39:13-81
+91            android:exported="false"
+91-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:40:13-37
+92            android:label="@string/fui_title_recover_password_activity"
+92-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:41:13-72
+93            android:windowSoftInputMode="adjustResize" />
+93-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:42:13-55
+94        <activity
+94-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:43:9-47:58
+95            android:name="com.firebase.ui.auth.ui.email.EmailActivity"
+95-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:44:13-71
+96            android:exported="false"
+96-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:45:13-37
+97            android:label="@string/fui_sign_in_default"
+97-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:46:13-56
+98            android:windowSoftInputMode="adjustResize" />
+98-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:47:13-55
+99        <activity
+99-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:48:9-52:77
+100            android:name="com.firebase.ui.auth.ui.phone.PhoneActivity"
+100-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:49:13-71
+101            android:exported="false"
+101-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:50:13-37
+102            android:label="@string/fui_sign_in_with_phone_number"
+102-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:51:13-66
+103            android:windowSoftInputMode="adjustResize|stateAlwaysVisible" />
+103-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:52:13-74
+104        <activity
+104-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:53:9-57:58
+105            android:name="com.firebase.ui.auth.ui.idp.WelcomeBackIdpPrompt"
+105-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:54:13-76
+106            android:exported="false"
+106-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:55:13-37
+107            android:label="@string/fui_title_welcome_back_idp_prompt"
+107-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:56:13-70
+108            android:windowSoftInputMode="adjustResize" />
+108-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:57:13-55
+109        <activity
+109-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:58:9-62:58
+110            android:name="com.firebase.ui.auth.ui.email.WelcomeBackPasswordPrompt"
+110-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:59:13-83
+111            android:exported="false"
+111-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:60:13-37
+112            android:label="@string/fui_title_welcome_back_password_prompt"
+112-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:61:13-75
+113            android:windowSoftInputMode="adjustResize" />
+113-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:62:13-55
+114        <activity
+114-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:63:9-67:58
+115            android:name="com.firebase.ui.auth.ui.email.WelcomeBackEmailLinkPrompt"
+115-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:64:13-84
+116            android:exported="false"
+116-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:65:13-37
+117            android:label="@string/fui_title_welcome_back_password_prompt"
+117-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:66:13-75
+118            android:windowSoftInputMode="adjustResize" />
+118-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:67:13-55
+119        <activity
+119-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:68:9-73:58
+120            android:name="com.firebase.ui.auth.ui.email.EmailLinkCatcherActivity"
+120-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:69:13-82
+121            android:exported="false"
+121-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:70:13-37
+122            android:label=""
+122-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:71:13-29
+123            android:theme="@style/FirebaseUI.Transparent"
+123-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:72:13-58
+124            android:windowSoftInputMode="adjustResize" />
+124-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:73:13-55
+125        <activity
+125-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:74:9-78:58
+126            android:name="com.firebase.ui.auth.ui.email.EmailLinkErrorRecoveryActivity"
+126-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:75:13-88
+127            android:exported="false"
+127-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:76:13-37
+128            android:label="@string/fui_sign_in_default"
+128-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:77:13-56
+129            android:windowSoftInputMode="adjustResize" />
+129-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:78:13-55
+130        <activity
+130-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:79:9-82:65
+131            android:name="com.firebase.ui.auth.ui.idp.AuthMethodPickerActivity"
+131-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:80:13-80
+132            android:exported="false"
+132-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:81:13-37
+133            android:label="@string/fui_default_toolbar_title" />
+133-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:82:13-62
+134        <activity
+134-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:83:9-87:48
+135            android:name="com.facebook.FacebookActivity"
+135-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:84:13-57
+136            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+136-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:85:13-96
+137            android:label="@string/app_name"
+137-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:86:13-45
+138            android:theme="@style/com_facebook_activity_theme" />
+138-->[com.facebook.android:facebook-common:13.1.0] /home/lucifer/.gradle/caches/transforms-3/1a6373ca2a174de5c8b92b656a117526/transformed/facebook-common-13.1.0/AndroidManifest.xml:33:13-63
+139        <activity
+139-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:88:9-100:20
+140            android:name="com.facebook.CustomTabActivity"
+140-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:89:13-58
+141            android:exported="true" >
+141-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:90:13-36
+142            <intent-filter>
+142-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:92:13-99:29
+143                <action android:name="android.intent.action.VIEW" />
+143-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:93:17-69
+143-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:93:25-66
+144
+145                <category android:name="android.intent.category.DEFAULT" />
+145-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:95:17-76
+145-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:95:27-73
+146                <category android:name="android.intent.category.BROWSABLE" />
+146-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:96:17-78
+146-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:96:27-75
+147
+148                <data android:scheme="@string/facebook_login_protocol_scheme" />
+148-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:98:17-81
+148-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:98:23-78
+149            </intent-filter>
+150            <intent-filter>
+150-->[com.facebook.android:facebook-common:13.1.0] /home/lucifer/.gradle/caches/transforms-3/1a6373ca2a174de5c8b92b656a117526/transformed/facebook-common-13.1.0/AndroidManifest.xml:39:13-48:29
+151                <action android:name="android.intent.action.VIEW" />
+151-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:93:17-69
+151-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:93:25-66
+152
+153                <category android:name="android.intent.category.DEFAULT" />
+153-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:95:17-76
+153-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:95:27-73
+154                <category android:name="android.intent.category.BROWSABLE" />
+154-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:96:17-78
+154-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:96:27-75
+155
+156                <data
+156-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:98:17-81
+157                    android:host="cct.com.example.babysitter"
+158                    android:scheme="fbconnect" />
+158-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:98:23-78
+159            </intent-filter>
+160        </activity>
+161
+162        <provider
+162-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:102:9-106:38
+163            android:name="com.firebase.ui.auth.data.client.AuthUiInitProvider"
+163-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:103:13-79
+164            android:authorities="com.example.babysitter.authuiinitprovider"
+164-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:104:13-70
+165            android:exported="false"
+165-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:105:13-37
+166            android:initOrder="90" />
+166-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:106:13-35
+167        <provider
+167-->[com.squareup.picasso:picasso:2.8] /home/lucifer/.gradle/caches/transforms-3/fb02c62be8b493caa30f3ae0f332efae/transformed/picasso-2.8/AndroidManifest.xml:8:9-11:40
+168            android:name="com.squareup.picasso.PicassoProvider"
+168-->[com.squareup.picasso:picasso:2.8] /home/lucifer/.gradle/caches/transforms-3/fb02c62be8b493caa30f3ae0f332efae/transformed/picasso-2.8/AndroidManifest.xml:9:13-64
+169            android:authorities="com.example.babysitter.com.squareup.picasso"
+169-->[com.squareup.picasso:picasso:2.8] /home/lucifer/.gradle/caches/transforms-3/fb02c62be8b493caa30f3ae0f332efae/transformed/picasso-2.8/AndroidManifest.xml:10:13-72
+170            android:exported="false" />
+170-->[com.squareup.picasso:picasso:2.8] /home/lucifer/.gradle/caches/transforms-3/fb02c62be8b493caa30f3ae0f332efae/transformed/picasso-2.8/AndroidManifest.xml:11:13-37
+171
+172        <activity android:name="com.facebook.CustomTabMainActivity" />
+172-->[com.facebook.android:facebook-common:13.1.0] /home/lucifer/.gradle/caches/transforms-3/1a6373ca2a174de5c8b92b656a117526/transformed/facebook-common-13.1.0/AndroidManifest.xml:34:9-71
+172-->[com.facebook.android:facebook-common:13.1.0] /home/lucifer/.gradle/caches/transforms-3/1a6373ca2a174de5c8b92b656a117526/transformed/facebook-common-13.1.0/AndroidManifest.xml:34:19-68
+173        <activity
+173-->[com.google.android.gms:play-services-auth:20.1.0] /home/lucifer/.gradle/caches/transforms-3/49a0bb5724c6a54de0ef2e99d2224f6e/transformed/play-services-auth-20.1.0/AndroidManifest.xml:23:9-27:75
+174            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+174-->[com.google.android.gms:play-services-auth:20.1.0] /home/lucifer/.gradle/caches/transforms-3/49a0bb5724c6a54de0ef2e99d2224f6e/transformed/play-services-auth-20.1.0/AndroidManifest.xml:24:13-93
+175            android:excludeFromRecents="true"
+175-->[com.google.android.gms:play-services-auth:20.1.0] /home/lucifer/.gradle/caches/transforms-3/49a0bb5724c6a54de0ef2e99d2224f6e/transformed/play-services-auth-20.1.0/AndroidManifest.xml:25:13-46
+176            android:exported="false"
+176-->[com.google.android.gms:play-services-auth:20.1.0] /home/lucifer/.gradle/caches/transforms-3/49a0bb5724c6a54de0ef2e99d2224f6e/transformed/play-services-auth-20.1.0/AndroidManifest.xml:26:13-37
+177            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+177-->[com.google.android.gms:play-services-auth:20.1.0] /home/lucifer/.gradle/caches/transforms-3/49a0bb5724c6a54de0ef2e99d2224f6e/transformed/play-services-auth-20.1.0/AndroidManifest.xml:27:13-72
+178        <!--
+179            Service handling Google Sign-In user revocation. For apps that do not integrate with
+180            Google Sign-In, this service will never be started.
+181        -->
+182        <service
+182-->[com.google.android.gms:play-services-auth:20.1.0] /home/lucifer/.gradle/caches/transforms-3/49a0bb5724c6a54de0ef2e99d2224f6e/transformed/play-services-auth-20.1.0/AndroidManifest.xml:33:9-37:51
+183            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+183-->[com.google.android.gms:play-services-auth:20.1.0] /home/lucifer/.gradle/caches/transforms-3/49a0bb5724c6a54de0ef2e99d2224f6e/transformed/play-services-auth-20.1.0/AndroidManifest.xml:34:13-89
+184            android:exported="true"
+184-->[com.google.android.gms:play-services-auth:20.1.0] /home/lucifer/.gradle/caches/transforms-3/49a0bb5724c6a54de0ef2e99d2224f6e/transformed/play-services-auth-20.1.0/AndroidManifest.xml:35:13-36
+185            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+185-->[com.google.android.gms:play-services-auth:20.1.0] /home/lucifer/.gradle/caches/transforms-3/49a0bb5724c6a54de0ef2e99d2224f6e/transformed/play-services-auth-20.1.0/AndroidManifest.xml:36:13-107
+186            android:visibleToInstantApps="true" />
+186-->[com.google.android.gms:play-services-auth:20.1.0] /home/lucifer/.gradle/caches/transforms-3/49a0bb5724c6a54de0ef2e99d2224f6e/transformed/play-services-auth-20.1.0/AndroidManifest.xml:37:13-48
+187        <service
+187-->[com.google.firebase:firebase-firestore:24.0.2] /home/lucifer/.gradle/caches/transforms-3/32722a86a4db18b7fc61f24f61a6b4b7/transformed/firebase-firestore-24.0.2/AndroidManifest.xml:17:9-23:19
+188            android:name="com.google.firebase.components.ComponentDiscoveryService"
+188-->[com.google.firebase:firebase-firestore:24.0.2] /home/lucifer/.gradle/caches/transforms-3/32722a86a4db18b7fc61f24f61a6b4b7/transformed/firebase-firestore-24.0.2/AndroidManifest.xml:18:13-84
+189            android:directBootAware="true"
+189-->[com.google.firebase:firebase-common:20.1.0] /home/lucifer/.gradle/caches/transforms-3/f184a65040424a4d80b6857714a7769f/transformed/firebase-common-20.1.0/AndroidManifest.xml:35:13-43
+190            android:exported="false" >
+190-->[com.google.firebase:firebase-firestore:24.0.2] /home/lucifer/.gradle/caches/transforms-3/32722a86a4db18b7fc61f24f61a6b4b7/transformed/firebase-firestore-24.0.2/AndroidManifest.xml:19:13-37
+191            <meta-data
+191-->[com.google.firebase:firebase-firestore:24.0.2] /home/lucifer/.gradle/caches/transforms-3/32722a86a4db18b7fc61f24f61a6b4b7/transformed/firebase-firestore-24.0.2/AndroidManifest.xml:20:13-22:85
+192                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+192-->[com.google.firebase:firebase-firestore:24.0.2] /home/lucifer/.gradle/caches/transforms-3/32722a86a4db18b7fc61f24f61a6b4b7/transformed/firebase-firestore-24.0.2/AndroidManifest.xml:21:17-111
+193                android:value="com.google.firebase.components.ComponentRegistrar" />
+193-->[com.google.firebase:firebase-firestore:24.0.2] /home/lucifer/.gradle/caches/transforms-3/32722a86a4db18b7fc61f24f61a6b4b7/transformed/firebase-firestore-24.0.2/AndroidManifest.xml:22:17-82
+194            <meta-data
+194-->[com.google.firebase:firebase-auth:21.0.2] /home/lucifer/.gradle/caches/transforms-3/6bb9b061fe25bf2cf1323f6eb0176472/transformed/firebase-auth-21.0.2/AndroidManifest.xml:67:13-69:85
+195                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+195-->[com.google.firebase:firebase-auth:21.0.2] /home/lucifer/.gradle/caches/transforms-3/6bb9b061fe25bf2cf1323f6eb0176472/transformed/firebase-auth-21.0.2/AndroidManifest.xml:68:17-109
+196                android:value="com.google.firebase.components.ComponentRegistrar" />
+196-->[com.google.firebase:firebase-auth:21.0.2] /home/lucifer/.gradle/caches/transforms-3/6bb9b061fe25bf2cf1323f6eb0176472/transformed/firebase-auth-21.0.2/AndroidManifest.xml:69:17-82
+197        </service>
+198
+199        <activity
+199-->[com.google.firebase:firebase-auth:21.0.2] /home/lucifer/.gradle/caches/transforms-3/6bb9b061fe25bf2cf1323f6eb0176472/transformed/firebase-auth-21.0.2/AndroidManifest.xml:27:9-44:20
+200            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+200-->[com.google.firebase:firebase-auth:21.0.2] /home/lucifer/.gradle/caches/transforms-3/6bb9b061fe25bf2cf1323f6eb0176472/transformed/firebase-auth-21.0.2/AndroidManifest.xml:28:13-80
+201            android:excludeFromRecents="true"
+201-->[com.google.firebase:firebase-auth:21.0.2] /home/lucifer/.gradle/caches/transforms-3/6bb9b061fe25bf2cf1323f6eb0176472/transformed/firebase-auth-21.0.2/AndroidManifest.xml:29:13-46
+202            android:exported="true"
+202-->[com.google.firebase:firebase-auth:21.0.2] /home/lucifer/.gradle/caches/transforms-3/6bb9b061fe25bf2cf1323f6eb0176472/transformed/firebase-auth-21.0.2/AndroidManifest.xml:30:13-36
+203            android:launchMode="singleTask"
+203-->[com.google.firebase:firebase-auth:21.0.2] /home/lucifer/.gradle/caches/transforms-3/6bb9b061fe25bf2cf1323f6eb0176472/transformed/firebase-auth-21.0.2/AndroidManifest.xml:31:13-44
+204            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+204-->[com.google.firebase:firebase-auth:21.0.2] /home/lucifer/.gradle/caches/transforms-3/6bb9b061fe25bf2cf1323f6eb0176472/transformed/firebase-auth-21.0.2/AndroidManifest.xml:32:13-72
+205            <intent-filter>
+205-->[com.google.firebase:firebase-auth:21.0.2] /home/lucifer/.gradle/caches/transforms-3/6bb9b061fe25bf2cf1323f6eb0176472/transformed/firebase-auth-21.0.2/AndroidManifest.xml:33:13-43:29
+206                <action android:name="android.intent.action.VIEW" />
+206-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:93:17-69
+206-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:93:25-66
+207
+208                <category android:name="android.intent.category.DEFAULT" />
+208-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:95:17-76
+208-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:95:27-73
+209                <category android:name="android.intent.category.BROWSABLE" />
+209-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:96:17-78
+209-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:96:27-75
+210
+211                <data
+211-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:98:17-81
+212                    android:host="firebase.auth"
+213                    android:path="/"
+214                    android:scheme="genericidp" />
+214-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:98:23-78
+215            </intent-filter>
+216        </activity>
+217        <activity
+217-->[com.google.firebase:firebase-auth:21.0.2] /home/lucifer/.gradle/caches/transforms-3/6bb9b061fe25bf2cf1323f6eb0176472/transformed/firebase-auth-21.0.2/AndroidManifest.xml:45:9-62:20
+218            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+218-->[com.google.firebase:firebase-auth:21.0.2] /home/lucifer/.gradle/caches/transforms-3/6bb9b061fe25bf2cf1323f6eb0176472/transformed/firebase-auth-21.0.2/AndroidManifest.xml:46:13-79
+219            android:excludeFromRecents="true"
+219-->[com.google.firebase:firebase-auth:21.0.2] /home/lucifer/.gradle/caches/transforms-3/6bb9b061fe25bf2cf1323f6eb0176472/transformed/firebase-auth-21.0.2/AndroidManifest.xml:47:13-46
+220            android:exported="true"
+220-->[com.google.firebase:firebase-auth:21.0.2] /home/lucifer/.gradle/caches/transforms-3/6bb9b061fe25bf2cf1323f6eb0176472/transformed/firebase-auth-21.0.2/AndroidManifest.xml:48:13-36
+221            android:launchMode="singleTask"
+221-->[com.google.firebase:firebase-auth:21.0.2] /home/lucifer/.gradle/caches/transforms-3/6bb9b061fe25bf2cf1323f6eb0176472/transformed/firebase-auth-21.0.2/AndroidManifest.xml:49:13-44
+222            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+222-->[com.google.firebase:firebase-auth:21.0.2] /home/lucifer/.gradle/caches/transforms-3/6bb9b061fe25bf2cf1323f6eb0176472/transformed/firebase-auth-21.0.2/AndroidManifest.xml:50:13-72
+223            <intent-filter>
+223-->[com.google.firebase:firebase-auth:21.0.2] /home/lucifer/.gradle/caches/transforms-3/6bb9b061fe25bf2cf1323f6eb0176472/transformed/firebase-auth-21.0.2/AndroidManifest.xml:51:13-61:29
+224                <action android:name="android.intent.action.VIEW" />
+224-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:93:17-69
+224-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:93:25-66
+225
+226                <category android:name="android.intent.category.DEFAULT" />
+226-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:95:17-76
+226-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:95:27-73
+227                <category android:name="android.intent.category.BROWSABLE" />
+227-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:96:17-78
+227-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:96:27-75
+228
+229                <data
+229-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:98:17-81
+230                    android:host="firebase.auth"
+231                    android:path="/"
+232                    android:scheme="recaptcha" />
+232-->[com.firebaseui:firebase-ui-auth:7.2.0] /home/lucifer/.gradle/caches/transforms-3/b15da7b4341c3e58ae8d04c3c61dd670/transformed/firebase-ui-auth-7.2.0/AndroidManifest.xml:98:23-78
+233            </intent-filter>
+234        </activity>
+235
+236        <provider
+236-->[com.google.firebase:firebase-common:20.1.0] /home/lucifer/.gradle/caches/transforms-3/f184a65040424a4d80b6857714a7769f/transformed/firebase-common-20.1.0/AndroidManifest.xml:26:9-31:39
+237            android:name="com.google.firebase.provider.FirebaseInitProvider"
+237-->[com.google.firebase:firebase-common:20.1.0] /home/lucifer/.gradle/caches/transforms-3/f184a65040424a4d80b6857714a7769f/transformed/firebase-common-20.1.0/AndroidManifest.xml:27:13-77
+238            android:authorities="com.example.babysitter.firebaseinitprovider"
+238-->[com.google.firebase:firebase-common:20.1.0] /home/lucifer/.gradle/caches/transforms-3/f184a65040424a4d80b6857714a7769f/transformed/firebase-common-20.1.0/AndroidManifest.xml:28:13-72
+239            android:directBootAware="true"
+239-->[com.google.firebase:firebase-common:20.1.0] /home/lucifer/.gradle/caches/transforms-3/f184a65040424a4d80b6857714a7769f/transformed/firebase-common-20.1.0/AndroidManifest.xml:29:13-43
+240            android:exported="false"
+240-->[com.google.firebase:firebase-common:20.1.0] /home/lucifer/.gradle/caches/transforms-3/f184a65040424a4d80b6857714a7769f/transformed/firebase-common-20.1.0/AndroidManifest.xml:30:13-37
+241            android:initOrder="100" />
+241-->[com.google.firebase:firebase-common:20.1.0] /home/lucifer/.gradle/caches/transforms-3/f184a65040424a4d80b6857714a7769f/transformed/firebase-common-20.1.0/AndroidManifest.xml:31:13-36
+242        <!--
+243         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+244         with the application context. This config is merged in with the host app's manifest,
+245         but there can only be one provider with the same authority activated at any given
+246         point; so if the end user has two or more different apps that use Facebook SDK, only the
+247         first one will be able to use the provider. To work around this problem, we use the
+248         following placeholder in the authority to identify each host application as if it was
+249         a completely different provider.
+250        -->
+251        <provider
+251-->[com.facebook.android:facebook-core:13.1.0] /home/lucifer/.gradle/caches/transforms-3/44150eebac5ba08672cb911ad5f4a59a/transformed/facebook-core-13.1.0/AndroidManifest.xml:41:9-44:40
+252            android:name="com.facebook.internal.FacebookInitProvider"
+252-->[com.facebook.android:facebook-core:13.1.0] /home/lucifer/.gradle/caches/transforms-3/44150eebac5ba08672cb911ad5f4a59a/transformed/facebook-core-13.1.0/AndroidManifest.xml:42:13-70
+253            android:authorities="com.example.babysitter.FacebookInitProvider"
+253-->[com.facebook.android:facebook-core:13.1.0] /home/lucifer/.gradle/caches/transforms-3/44150eebac5ba08672cb911ad5f4a59a/transformed/facebook-core-13.1.0/AndroidManifest.xml:43:13-72
+254            android:exported="false" />
+254-->[com.facebook.android:facebook-core:13.1.0] /home/lucifer/.gradle/caches/transforms-3/44150eebac5ba08672cb911ad5f4a59a/transformed/facebook-core-13.1.0/AndroidManifest.xml:44:13-37
+255
+256        <receiver
+256-->[com.facebook.android:facebook-core:13.1.0] /home/lucifer/.gradle/caches/transforms-3/44150eebac5ba08672cb911ad5f4a59a/transformed/facebook-core-13.1.0/AndroidManifest.xml:46:9-52:20
+257            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+257-->[com.facebook.android:facebook-core:13.1.0] /home/lucifer/.gradle/caches/transforms-3/44150eebac5ba08672cb911ad5f4a59a/transformed/facebook-core-13.1.0/AndroidManifest.xml:47:13-86
+258            android:exported="false" >
+258-->[com.facebook.android:facebook-core:13.1.0] /home/lucifer/.gradle/caches/transforms-3/44150eebac5ba08672cb911ad5f4a59a/transformed/facebook-core-13.1.0/AndroidManifest.xml:48:13-37
+259            <intent-filter>
+259-->[com.facebook.android:facebook-core:13.1.0] /home/lucifer/.gradle/caches/transforms-3/44150eebac5ba08672cb911ad5f4a59a/transformed/facebook-core-13.1.0/AndroidManifest.xml:49:13-51:29
+260                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+260-->[com.facebook.android:facebook-core:13.1.0] /home/lucifer/.gradle/caches/transforms-3/44150eebac5ba08672cb911ad5f4a59a/transformed/facebook-core-13.1.0/AndroidManifest.xml:50:17-95
+260-->[com.facebook.android:facebook-core:13.1.0] /home/lucifer/.gradle/caches/transforms-3/44150eebac5ba08672cb911ad5f4a59a/transformed/facebook-core-13.1.0/AndroidManifest.xml:50:25-92
+261            </intent-filter>
+262        </receiver>
+263        <receiver
+263-->[com.facebook.android:facebook-core:13.1.0] /home/lucifer/.gradle/caches/transforms-3/44150eebac5ba08672cb911ad5f4a59a/transformed/facebook-core-13.1.0/AndroidManifest.xml:53:9-59:20
+264            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
+264-->[com.facebook.android:facebook-core:13.1.0] /home/lucifer/.gradle/caches/transforms-3/44150eebac5ba08672cb911ad5f4a59a/transformed/facebook-core-13.1.0/AndroidManifest.xml:54:13-118
+265            android:exported="false" >
+265-->[com.facebook.android:facebook-core:13.1.0] /home/lucifer/.gradle/caches/transforms-3/44150eebac5ba08672cb911ad5f4a59a/transformed/facebook-core-13.1.0/AndroidManifest.xml:55:13-37
+266            <intent-filter>
+266-->[com.facebook.android:facebook-core:13.1.0] /home/lucifer/.gradle/caches/transforms-3/44150eebac5ba08672cb911ad5f4a59a/transformed/facebook-core-13.1.0/AndroidManifest.xml:56:13-58:29
+267                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
+267-->[com.facebook.android:facebook-core:13.1.0] /home/lucifer/.gradle/caches/transforms-3/44150eebac5ba08672cb911ad5f4a59a/transformed/facebook-core-13.1.0/AndroidManifest.xml:57:17-103
+267-->[com.facebook.android:facebook-core:13.1.0] /home/lucifer/.gradle/caches/transforms-3/44150eebac5ba08672cb911ad5f4a59a/transformed/facebook-core-13.1.0/AndroidManifest.xml:57:25-100
+268            </intent-filter>
+269        </receiver>
+270
+271        <activity
+271-->[com.google.android.gms:play-services-base:18.0.1] /home/lucifer/.gradle/caches/transforms-3/5ec67feb5376452908b778b1ee185d2f/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+272            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+272-->[com.google.android.gms:play-services-base:18.0.1] /home/lucifer/.gradle/caches/transforms-3/5ec67feb5376452908b778b1ee185d2f/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+273            android:exported="false"
+273-->[com.google.android.gms:play-services-base:18.0.1] /home/lucifer/.gradle/caches/transforms-3/5ec67feb5376452908b778b1ee185d2f/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+274            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+274-->[com.google.android.gms:play-services-base:18.0.1] /home/lucifer/.gradle/caches/transforms-3/5ec67feb5376452908b778b1ee185d2f/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+275
+276        <provider
+276-->[androidx.emoji2:emoji2:1.0.0] /home/lucifer/.gradle/caches/transforms-3/6b9d55d3f3bdd165ea1de02d88668ed1/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+277            android:name="androidx.startup.InitializationProvider"
+277-->[androidx.emoji2:emoji2:1.0.0] /home/lucifer/.gradle/caches/transforms-3/6b9d55d3f3bdd165ea1de02d88668ed1/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
+278            android:authorities="com.example.babysitter.androidx-startup"
+278-->[androidx.emoji2:emoji2:1.0.0] /home/lucifer/.gradle/caches/transforms-3/6b9d55d3f3bdd165ea1de02d88668ed1/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
+279            android:exported="false" >
+279-->[androidx.emoji2:emoji2:1.0.0] /home/lucifer/.gradle/caches/transforms-3/6b9d55d3f3bdd165ea1de02d88668ed1/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
+280            <meta-data
+280-->[androidx.emoji2:emoji2:1.0.0] /home/lucifer/.gradle/caches/transforms-3/6b9d55d3f3bdd165ea1de02d88668ed1/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+281                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+281-->[androidx.emoji2:emoji2:1.0.0] /home/lucifer/.gradle/caches/transforms-3/6b9d55d3f3bdd165ea1de02d88668ed1/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
+282                android:value="androidx.startup" />
+282-->[androidx.emoji2:emoji2:1.0.0] /home/lucifer/.gradle/caches/transforms-3/6b9d55d3f3bdd165ea1de02d88668ed1/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
+283            <meta-data
+283-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/lucifer/.gradle/caches/transforms-3/155fdad38d0a9388b6de2500f1b9ea57/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+284                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+284-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/lucifer/.gradle/caches/transforms-3/155fdad38d0a9388b6de2500f1b9ea57/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+285                android:value="androidx.startup" />
+285-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/lucifer/.gradle/caches/transforms-3/155fdad38d0a9388b6de2500f1b9ea57/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+286        </provider>
+287    </application>
+288
+289</manifest>

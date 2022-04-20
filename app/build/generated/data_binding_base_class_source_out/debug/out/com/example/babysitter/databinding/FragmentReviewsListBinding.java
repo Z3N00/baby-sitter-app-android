@@ -4,29 +4,38 @@ package com.example.babysitter.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.babysitter.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class FragmentReviewsListBinding implements ViewBinding {
   @NonNull
-  private final RecyclerView rootView;
+  private final LinearLayout rootView;
 
   @NonNull
   public final RecyclerView list;
 
-  private FragmentReviewsListBinding(@NonNull RecyclerView rootView, @NonNull RecyclerView list) {
+  @NonNull
+  public final TextView textView12;
+
+  private FragmentReviewsListBinding(@NonNull LinearLayout rootView, @NonNull RecyclerView list,
+      @NonNull TextView textView12) {
     this.rootView = rootView;
     this.list = list;
+    this.textView12 = textView12;
   }
 
   @Override
   @NonNull
-  public RecyclerView getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -47,12 +56,25 @@ public final class FragmentReviewsListBinding implements ViewBinding {
 
   @NonNull
   public static FragmentReviewsListBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.list;
+      RecyclerView list = ViewBindings.findChildViewById(rootView, id);
+      if (list == null) {
+        break missingId;
+      }
+
+      id = R.id.textView12;
+      TextView textView12 = ViewBindings.findChildViewById(rootView, id);
+      if (textView12 == null) {
+        break missingId;
+      }
+
+      return new FragmentReviewsListBinding((LinearLayout) rootView, list, textView12);
     }
-
-    RecyclerView list = (RecyclerView) rootView;
-
-    return new FragmentReviewsListBinding((RecyclerView) rootView, list);
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

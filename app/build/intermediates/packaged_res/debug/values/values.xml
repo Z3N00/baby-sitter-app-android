@@ -18,7 +18,9 @@
     <string name="app_name">Baby Care+</string>
     <string name="babysitter">Babysitter</string>
     <string name="booking_done">Thanks for Confirming your Booking!!</string>
+    <string name="client_id">934415919490-es1utbk19m35b61vcv6odmjqaqnpg9uj.apps.googleusercontent.com</string>
     <string name="confirm_password_field">Confirm Password</string>
+    <string name="default_web_client_id" translatable="false">934415919490-es1utbk19m35b61vcv6odmjqaqnpg9uj.apps.googleusercontent.com</string>
     <string name="description">
         Light housework is performed. Engages children in enjoyable activities. Keeps the
         living and play places of youngsters clean. As needed, assists with schoolwork and
@@ -26,7 +28,14 @@
     </string>
     <string name="email_field">Email</string>
     <string name="email_sign_in">Signup with Email</string>
+    <string name="facebook_application_id" translatable="false">1852247284986388</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb1852247284986388</string>
     <string name="forgot_password">Forgot Password?</string>
+    <string name="gcm_defaultSenderId" translatable="false">934415919490</string>
+    <string name="google_api_key" translatable="false">AIzaSyCEaCZXDEKnflTkKdkpZgtFGaC4IRH6Erc</string>
+    <string name="google_app_id" translatable="false">1:934415919490:android:b28c5e399be692adf7479b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCEaCZXDEKnflTkKdkpZgtFGaC4IRH6Erc</string>
+    <string name="google_storage_bucket" translatable="false">babycare-d1be6.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="name_field">Name</string>
     <string name="parent">Parent</string>
@@ -36,6 +45,7 @@
     <string name="placeholder_item">Baby Bath</string>
     <string name="placeholder_name">Smith Jones</string>
     <string name="placeholder_rating">4.5 / 5.0</string>
+    <string name="project_id" translatable="false">babycare-d1be6</string>
     <string name="review_text">
         He has watched my two children (ages 4 and 7) twice a week for the entire summer,
         and they were a joy to work with. Smith Jones consistently arrived at
@@ -48,8 +58,16 @@
     <string name="title_activity_main_parents">MainParentsActivity</string>
     <string name="view_profile">View Profile</string>
     <string name="welcome">Welcome!</string>
+    <style name="CustomCardViewStyle" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay_card_custom_corners</item>
+    </style>
     <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
         <item name="cornerSize">50%</item>
+    </style>
+    <style name="ShapeAppearanceOverlay_card_custom_corners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">32dp</item>
+        <item name="cornerSizeTopLeft">32dp</item>
     </style>
     <style name="Theme.BabySitter" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->

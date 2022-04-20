@@ -4,29 +4,46 @@ package com.example.babysitter.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.babysitter.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class FragmentChatListBinding implements ViewBinding {
   @NonNull
-  private final RecyclerView rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
   public final RecyclerView list;
 
-  private FragmentChatListBinding(@NonNull RecyclerView rootView, @NonNull RecyclerView list) {
+  @NonNull
+  public final TextView textView12;
+
+  @NonNull
+  public final TextView textView18;
+
+  @NonNull
+  public final TextView textView20;
+
+  private FragmentChatListBinding(@NonNull ConstraintLayout rootView, @NonNull RecyclerView list,
+      @NonNull TextView textView12, @NonNull TextView textView18, @NonNull TextView textView20) {
     this.rootView = rootView;
     this.list = list;
+    this.textView12 = textView12;
+    this.textView18 = textView18;
+    this.textView20 = textView20;
   }
 
   @Override
   @NonNull
-  public RecyclerView getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -47,12 +64,38 @@ public final class FragmentChatListBinding implements ViewBinding {
 
   @NonNull
   public static FragmentChatListBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.list;
+      RecyclerView list = ViewBindings.findChildViewById(rootView, id);
+      if (list == null) {
+        break missingId;
+      }
+
+      id = R.id.textView12;
+      TextView textView12 = ViewBindings.findChildViewById(rootView, id);
+      if (textView12 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView18;
+      TextView textView18 = ViewBindings.findChildViewById(rootView, id);
+      if (textView18 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView20;
+      TextView textView20 = ViewBindings.findChildViewById(rootView, id);
+      if (textView20 == null) {
+        break missingId;
+      }
+
+      return new FragmentChatListBinding((ConstraintLayout) rootView, list, textView12, textView18,
+          textView20);
     }
-
-    RecyclerView list = (RecyclerView) rootView;
-
-    return new FragmentChatListBinding((RecyclerView) rootView, list);
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

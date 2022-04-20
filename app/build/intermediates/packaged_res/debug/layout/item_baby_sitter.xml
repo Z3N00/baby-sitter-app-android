@@ -6,7 +6,8 @@
     android:layout_gravity="center"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
     card_view:cardCornerRadius="8dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -47,7 +48,8 @@
             android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
             card_view:layout_constraintStart_toStartOf="@+id/babysitterName"
             card_view:layout_constraintTop_toBottomOf="@+id/babysitterName"
-            android:text="@string/placeholder_rating" />
+            android:text=""
+            card_view:drawableStartCompat="@drawable/ic_action_star" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/viewProfileButton"

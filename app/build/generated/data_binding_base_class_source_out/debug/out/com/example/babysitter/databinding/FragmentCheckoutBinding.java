@@ -28,13 +28,10 @@ public final class FragmentCheckoutBinding implements ViewBinding {
   public final RecyclerView list;
 
   @NonNull
-  public final TextView textView22;
+  public final TextView subtotal;
 
   @NonNull
-  public final TextView textView23;
-
-  @NonNull
-  public final TextView textView24;
+  public final TextView tax;
 
   @NonNull
   public final TextView textView25;
@@ -48,20 +45,23 @@ public final class FragmentCheckoutBinding implements ViewBinding {
   @NonNull
   public final TextView textView28;
 
+  @NonNull
+  public final TextView total;
+
   private FragmentCheckoutBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button checkoutButton, @NonNull RecyclerView list, @NonNull TextView textView22,
-      @NonNull TextView textView23, @NonNull TextView textView24, @NonNull TextView textView25,
-      @NonNull TextView textView26, @NonNull TextView textView27, @NonNull TextView textView28) {
+      @NonNull Button checkoutButton, @NonNull RecyclerView list, @NonNull TextView subtotal,
+      @NonNull TextView tax, @NonNull TextView textView25, @NonNull TextView textView26,
+      @NonNull TextView textView27, @NonNull TextView textView28, @NonNull TextView total) {
     this.rootView = rootView;
     this.checkoutButton = checkoutButton;
     this.list = list;
-    this.textView22 = textView22;
-    this.textView23 = textView23;
-    this.textView24 = textView24;
+    this.subtotal = subtotal;
+    this.tax = tax;
     this.textView25 = textView25;
     this.textView26 = textView26;
     this.textView27 = textView27;
     this.textView28 = textView28;
+    this.total = total;
   }
 
   @Override
@@ -103,21 +103,15 @@ public final class FragmentCheckoutBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView22;
-      TextView textView22 = ViewBindings.findChildViewById(rootView, id);
-      if (textView22 == null) {
+      id = R.id.subtotal;
+      TextView subtotal = ViewBindings.findChildViewById(rootView, id);
+      if (subtotal == null) {
         break missingId;
       }
 
-      id = R.id.textView23;
-      TextView textView23 = ViewBindings.findChildViewById(rootView, id);
-      if (textView23 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView24;
-      TextView textView24 = ViewBindings.findChildViewById(rootView, id);
-      if (textView24 == null) {
+      id = R.id.tax;
+      TextView tax = ViewBindings.findChildViewById(rootView, id);
+      if (tax == null) {
         break missingId;
       }
 
@@ -145,8 +139,14 @@ public final class FragmentCheckoutBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.total;
+      TextView total = ViewBindings.findChildViewById(rootView, id);
+      if (total == null) {
+        break missingId;
+      }
+
       return new FragmentCheckoutBinding((ConstraintLayout) rootView, checkoutButton, list,
-          textView22, textView23, textView24, textView25, textView26, textView27, textView28);
+          subtotal, tax, textView25, textView26, textView27, textView28, total);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

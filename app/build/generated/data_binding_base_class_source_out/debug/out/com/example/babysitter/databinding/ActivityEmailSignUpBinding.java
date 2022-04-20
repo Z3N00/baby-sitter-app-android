@@ -4,10 +4,10 @@ package com.example.babysitter.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.babysitter.R;
@@ -19,13 +19,16 @@ import java.lang.String;
 
 public final class ActivityEmailSignUpBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final ScrollView rootView;
 
   @NonNull
   public final TextInputLayout addressTextField;
 
   @NonNull
   public final TextInputLayout confirmPasswordTextField;
+
+  @NonNull
+  public final TextInputLayout descriptionTextField;
 
   @NonNull
   public final TextInputLayout emailTextField;
@@ -40,6 +43,9 @@ public final class ActivityEmailSignUpBinding implements ViewBinding {
   public final TextInputLayout phoneTextField;
 
   @NonNull
+  public final TextInputLayout priceTextField;
+
+  @NonNull
   public final MaterialButton signUpButton;
 
   @NonNull
@@ -48,19 +54,22 @@ public final class ActivityEmailSignUpBinding implements ViewBinding {
   @NonNull
   public final TextView textView3;
 
-  private ActivityEmailSignUpBinding(@NonNull ConstraintLayout rootView,
+  private ActivityEmailSignUpBinding(@NonNull ScrollView rootView,
       @NonNull TextInputLayout addressTextField, @NonNull TextInputLayout confirmPasswordTextField,
-      @NonNull TextInputLayout emailTextField, @NonNull TextInputLayout nameTextField,
-      @NonNull TextInputLayout passwordTextField, @NonNull TextInputLayout phoneTextField,
+      @NonNull TextInputLayout descriptionTextField, @NonNull TextInputLayout emailTextField,
+      @NonNull TextInputLayout nameTextField, @NonNull TextInputLayout passwordTextField,
+      @NonNull TextInputLayout phoneTextField, @NonNull TextInputLayout priceTextField,
       @NonNull MaterialButton signUpButton, @NonNull TextView textView2,
       @NonNull TextView textView3) {
     this.rootView = rootView;
     this.addressTextField = addressTextField;
     this.confirmPasswordTextField = confirmPasswordTextField;
+    this.descriptionTextField = descriptionTextField;
     this.emailTextField = emailTextField;
     this.nameTextField = nameTextField;
     this.passwordTextField = passwordTextField;
     this.phoneTextField = phoneTextField;
+    this.priceTextField = priceTextField;
     this.signUpButton = signUpButton;
     this.textView2 = textView2;
     this.textView3 = textView3;
@@ -68,7 +77,7 @@ public final class ActivityEmailSignUpBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -105,6 +114,12 @@ public final class ActivityEmailSignUpBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.descriptionTextField;
+      TextInputLayout descriptionTextField = ViewBindings.findChildViewById(rootView, id);
+      if (descriptionTextField == null) {
+        break missingId;
+      }
+
       id = R.id.emailTextField;
       TextInputLayout emailTextField = ViewBindings.findChildViewById(rootView, id);
       if (emailTextField == null) {
@@ -129,6 +144,12 @@ public final class ActivityEmailSignUpBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.priceTextField;
+      TextInputLayout priceTextField = ViewBindings.findChildViewById(rootView, id);
+      if (priceTextField == null) {
+        break missingId;
+      }
+
       id = R.id.signUpButton;
       MaterialButton signUpButton = ViewBindings.findChildViewById(rootView, id);
       if (signUpButton == null) {
@@ -147,9 +168,9 @@ public final class ActivityEmailSignUpBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityEmailSignUpBinding((ConstraintLayout) rootView, addressTextField,
-          confirmPasswordTextField, emailTextField, nameTextField, passwordTextField,
-          phoneTextField, signUpButton, textView2, textView3);
+      return new ActivityEmailSignUpBinding((ScrollView) rootView, addressTextField,
+          confirmPasswordTextField, descriptionTextField, emailTextField, nameTextField,
+          passwordTextField, phoneTextField, priceTextField, signUpButton, textView2, textView3);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

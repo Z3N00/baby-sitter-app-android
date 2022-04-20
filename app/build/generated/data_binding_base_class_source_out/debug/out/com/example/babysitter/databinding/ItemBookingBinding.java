@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -13,7 +14,7 @@ import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.babysitter.R;
-import com.google.android.material.chip.Chip;
+import com.google.android.material.chip.ChipGroup;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -23,37 +24,43 @@ public final class ItemBookingBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
+  public final ImageButton acceptButton;
+
+  @NonNull
+  public final Button addReview;
+
+  @NonNull
   public final ImageView babysitterImage;
 
   @NonNull
   public final TextView babysitterName;
 
   @NonNull
-  public final Button button2;
-
-  @NonNull
-  public final Button button3;
-
-  @NonNull
-  public final Chip chip4;
+  public final TextView description;
 
   @NonNull
   public final CardView itemBabySitter;
 
   @NonNull
-  public final TextView textView21;
+  public final ImageButton rejectButton;
 
-  private ItemBookingBinding(@NonNull CardView rootView, @NonNull ImageView babysitterImage,
-      @NonNull TextView babysitterName, @NonNull Button button2, @NonNull Button button3,
-      @NonNull Chip chip4, @NonNull CardView itemBabySitter, @NonNull TextView textView21) {
+  @NonNull
+  public final ChipGroup services;
+
+  private ItemBookingBinding(@NonNull CardView rootView, @NonNull ImageButton acceptButton,
+      @NonNull Button addReview, @NonNull ImageView babysitterImage,
+      @NonNull TextView babysitterName, @NonNull TextView description,
+      @NonNull CardView itemBabySitter, @NonNull ImageButton rejectButton,
+      @NonNull ChipGroup services) {
     this.rootView = rootView;
+    this.acceptButton = acceptButton;
+    this.addReview = addReview;
     this.babysitterImage = babysitterImage;
     this.babysitterName = babysitterName;
-    this.button2 = button2;
-    this.button3 = button3;
-    this.chip4 = chip4;
+    this.description = description;
     this.itemBabySitter = itemBabySitter;
-    this.textView21 = textView21;
+    this.rejectButton = rejectButton;
+    this.services = services;
   }
 
   @Override
@@ -83,6 +90,18 @@ public final class ItemBookingBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.acceptButton;
+      ImageButton acceptButton = ViewBindings.findChildViewById(rootView, id);
+      if (acceptButton == null) {
+        break missingId;
+      }
+
+      id = R.id.addReview;
+      Button addReview = ViewBindings.findChildViewById(rootView, id);
+      if (addReview == null) {
+        break missingId;
+      }
+
       id = R.id.babysitterImage;
       ImageView babysitterImage = ViewBindings.findChildViewById(rootView, id);
       if (babysitterImage == null) {
@@ -95,34 +114,28 @@ public final class ItemBookingBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.button2;
-      Button button2 = ViewBindings.findChildViewById(rootView, id);
-      if (button2 == null) {
-        break missingId;
-      }
-
-      id = R.id.button3;
-      Button button3 = ViewBindings.findChildViewById(rootView, id);
-      if (button3 == null) {
-        break missingId;
-      }
-
-      id = R.id.chip4;
-      Chip chip4 = ViewBindings.findChildViewById(rootView, id);
-      if (chip4 == null) {
+      id = R.id.description;
+      TextView description = ViewBindings.findChildViewById(rootView, id);
+      if (description == null) {
         break missingId;
       }
 
       CardView itemBabySitter = (CardView) rootView;
 
-      id = R.id.textView21;
-      TextView textView21 = ViewBindings.findChildViewById(rootView, id);
-      if (textView21 == null) {
+      id = R.id.rejectButton;
+      ImageButton rejectButton = ViewBindings.findChildViewById(rootView, id);
+      if (rejectButton == null) {
         break missingId;
       }
 
-      return new ItemBookingBinding((CardView) rootView, babysitterImage, babysitterName, button2,
-          button3, chip4, itemBabySitter, textView21);
+      id = R.id.services;
+      ChipGroup services = ViewBindings.findChildViewById(rootView, id);
+      if (services == null) {
+        break missingId;
+      }
+
+      return new ItemBookingBinding((CardView) rootView, acceptButton, addReview, babysitterImage,
+          babysitterName, description, itemBabySitter, rejectButton, services);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

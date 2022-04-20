@@ -26,7 +26,7 @@
             card_view:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/select"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
@@ -36,14 +36,14 @@
             card_view:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView21"
+            android:id="@+id/price"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
             android:textColor="@color/purple_700"
             android:text="$12.50"
-            card_view:layout_constraintEnd_toStartOf="@+id/button2"
+            card_view:layout_constraintEnd_toStartOf="@+id/select"
             card_view:layout_constraintStart_toStartOf="@+id/serviceName"
             card_view:layout_constraintTop_toBottomOf="@+id/serviceName" />
 

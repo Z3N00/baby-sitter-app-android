@@ -6,7 +6,8 @@
     android:layout_gravity="center"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
     card_view:cardCornerRadius="8dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -31,53 +32,63 @@
             android:layout_width="128dp"
             android:layout_height="128dp"
             android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             android:src="@drawable/avatar"
+            card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintStart_toStartOf="parent"
             card_view:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/button2"
+        <ImageButton
+            android:id="@+id/acceptButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Accept"
+            android:src="@drawable/ic_accept_foreground"
+            android:background="#FFF3EB"
+            card_view:layout_constraintBottom_toTopOf="@+id/rejectButton"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Reject"
+        <ImageButton
+            android:id="@+id/rejectButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_cancel_foreground"
+            android:background="#FFF3EB"
             card_view:layout_constraintBottom_toBottomOf="parent"
-            card_view:layout_constraintEnd_toEndOf="parent" />
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/acceptButton" />
 
         <TextView
-            android:id="@+id/textView21"
+            android:id="@+id/description"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
-            android:layout_marginEnd="8dp"
             android:text="Need help to watched my two children (ages 4 and 7) twice a week for the entire summer."
-            card_view:layout_constraintEnd_toStartOf="@+id/button2"
+            card_view:layout_constraintEnd_toStartOf="@+id/rejectButton"
             card_view:layout_constraintStart_toEndOf="@+id/babysitterImage"
             card_view:layout_constraintTop_toBottomOf="@+id/babysitterName" />
 
         <com.google.android.material.chip.ChipGroup
+            android:id="@+id/services"
             android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginEnd="4dp"
-            card_view:layout_constraintBottom_toBottomOf="parent"
-            card_view:layout_constraintEnd_toStartOf="@+id/button3"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            card_view:layout_constraintBottom_toTopOf="@+id/addReview"
+            card_view:layout_constraintEnd_toEndOf="@+id/description"
             card_view:layout_constraintStart_toEndOf="@+id/babysitterImage"
-            card_view:layout_constraintTop_toBottomOf="@+id/textView21">
+            card_view:layout_constraintTop_toBottomOf="@+id/description" />
 
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chip4"
-                android:text="Baby Bath"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </com.google.android.material.chip.ChipGroup>
+        <Button
+            android:id="@+id/addReview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Add Review"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toStartOf="@+id/rejectButton"
+            card_view:layout_constraintStart_toEndOf="@+id/babysitterImage" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

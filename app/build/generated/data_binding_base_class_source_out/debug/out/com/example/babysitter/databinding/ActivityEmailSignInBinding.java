@@ -25,13 +25,13 @@ public final class ActivityEmailSignInBinding implements ViewBinding {
   public final TextInputLayout emailTextFieldLogin;
 
   @NonNull
+  public final TextView forgotPassword;
+
+  @NonNull
   public final MaterialButton loginButton;
 
   @NonNull
   public final TextInputLayout passwordTextFieldLogin;
-
-  @NonNull
-  public final TextView textView;
 
   @NonNull
   public final TextView textView4;
@@ -40,14 +40,14 @@ public final class ActivityEmailSignInBinding implements ViewBinding {
   public final TextView textView5;
 
   private ActivityEmailSignInBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextInputLayout emailTextFieldLogin, @NonNull MaterialButton loginButton,
-      @NonNull TextInputLayout passwordTextFieldLogin, @NonNull TextView textView,
+      @NonNull TextInputLayout emailTextFieldLogin, @NonNull TextView forgotPassword,
+      @NonNull MaterialButton loginButton, @NonNull TextInputLayout passwordTextFieldLogin,
       @NonNull TextView textView4, @NonNull TextView textView5) {
     this.rootView = rootView;
     this.emailTextFieldLogin = emailTextFieldLogin;
+    this.forgotPassword = forgotPassword;
     this.loginButton = loginButton;
     this.passwordTextFieldLogin = passwordTextFieldLogin;
-    this.textView = textView;
     this.textView4 = textView4;
     this.textView5 = textView5;
   }
@@ -85,6 +85,12 @@ public final class ActivityEmailSignInBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.forgotPassword;
+      TextView forgotPassword = ViewBindings.findChildViewById(rootView, id);
+      if (forgotPassword == null) {
+        break missingId;
+      }
+
       id = R.id.loginButton;
       MaterialButton loginButton = ViewBindings.findChildViewById(rootView, id);
       if (loginButton == null) {
@@ -94,12 +100,6 @@ public final class ActivityEmailSignInBinding implements ViewBinding {
       id = R.id.passwordTextFieldLogin;
       TextInputLayout passwordTextFieldLogin = ViewBindings.findChildViewById(rootView, id);
       if (passwordTextFieldLogin == null) {
-        break missingId;
-      }
-
-      id = R.id.textView;
-      TextView textView = ViewBindings.findChildViewById(rootView, id);
-      if (textView == null) {
         break missingId;
       }
 
@@ -116,7 +116,7 @@ public final class ActivityEmailSignInBinding implements ViewBinding {
       }
 
       return new ActivityEmailSignInBinding((ConstraintLayout) rootView, emailTextFieldLogin,
-          loginButton, passwordTextFieldLogin, textView, textView4, textView5);
+          forgotPassword, loginButton, passwordTextFieldLogin, textView4, textView5);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
