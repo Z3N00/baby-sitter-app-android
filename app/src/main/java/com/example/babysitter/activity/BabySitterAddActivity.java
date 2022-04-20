@@ -41,13 +41,16 @@ public class BabySitterAddActivity extends AppCompatActivity {
         map.put("email", user.getEmail());
         map.put("phone", user.getPhoneNumber());
         map.put("address", binding.addressTextField.getEditText().getText().toString());
-        map.put("profile", "avatar.png");
+        int number = (int) (Math.random() * 7);
+        map.put("profile", number + ".png");
 
         if (type.equalsIgnoreCase("babysitter")) {
             String description = binding.descriptionTextField.getEditText().getText().toString();
             double price =  Double.parseDouble(binding.priceTextField.getEditText().getText().toString());
             map.put("description", description);
             map.put("price", price);
+            map.put("rating", 0.0f);
+            map.put("ratingCount", 0);
         }
         FirebaseFirestore
                 .getInstance()

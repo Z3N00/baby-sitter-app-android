@@ -1,47 +1,44 @@
-package com.example.babysitter;
+package com.example.babysitter.fragment;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link AvailabilityFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+
+import com.applandeo.materialcalendarview.exceptions.OutOfDateRangeException;
+import com.applandeo.materialcalendarview.utils.DateUtils;
+import com.example.babysitter.activity.MainActivity;
+import com.example.babysitter.activity.MyFragmentFactory;
+import com.example.babysitter.R;
+import com.example.babysitter.databinding.FragmentAvailabilityBinding;
+import com.example.babysitter.model.BabySitter;
+import com.example.babysitter.model.Booking;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.ZoneOffset;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.List;
+
 public class AvailabilityFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private BabySitter sitter;
 
     public AvailabilityFragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment AvailabilityFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static AvailabilityFragment newInstance(String param1, String param2) {
+    public static AvailabilityFragment newInstance(BabySitter sitter) {
         AvailabilityFragment fragment = new AvailabilityFragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
+        args.putSerializable("sitter", sitter);
         fragment.setArguments(args);
         return fragment;
     }
@@ -50,23 +47,94 @@ public class AvailabilityFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+            sitter = (BabySitter) getArguments().getSerializable("sitter");
         }
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_availability, container, false);
-        view.findViewById(R.id.proceedButton).setOnClickListener(v -> {
-            getParentFragmentManager().beginTransaction()
+        FragmentAvailabilityBinding binding = FragmentAvailabilityBinding.inflate(inflater, container, false);
+        Calendar calendar = Calendar.getInstance();
+        LocalDate today = LocalDate.now();
+        calendar.set(today.getYear(), today.getMonthValue() - 1, today.getDayOfMonth());
+        binding.calendarView.setMinimumDate(calendar);
+        binding.calendarView2.setMinimumDate(calendar);
+        FirebaseFirestore
+                .getInstance()
+                .collection("bookings")
+                .get()
+                .addOnCompleteListener(task -> {
+                    List<Booking> allBookings = task.getResult().toObjects(Booking.class);
+                    List<Calendar> calendars = new ArrayList<>();
+                    LocalDate selectedDate = today;
+                    for (Booking booking : allBookings) {
+                        if (booking.babysitter.equalsIgnoreCase(sitter.ref)) {
+                            LocalDate startDate = Instant.ofEpochMilli(booking.startDate).atZone(ZoneOffset.UTC).toLocalDate();
+                            LocalDate endDate = Instant.ofEpochMilli(booking.endDate).atZone(ZoneOffset.UTC).toLocalDate();
+
+                            if ((selectedDate.isAfter(startDate) && selectedDate.isBefore(endDate))
+                                    || selectedDate.isEqual(startDate)
+                                    || selectedDate.isEqual(endDate)) {
+                                if (endDate.plusDays(1).isAfter(selectedDate)) {
+                                    selectedDate = endDate.plusDays(1);
+                                }
+                            }
+                            for (LocalDate date = startDate; date.isBefore(endDate); date = date.plusDays(1)) {
+                                calendars.add(
+                                        new GregorianCalendar.Builder()
+                                                .setDate(date.getYear(), date.getMonthValue() - 1, date.getDayOfMonth())
+                                                .build()
+                                );
+                            }
+                            calendars.add(
+                                    new GregorianCalendar.Builder()
+                                            .setDate(endDate.getYear(), endDate.getMonthValue() - 1, endDate.getDayOfMonth())
+                                            .build()
+                            );
+                        }
+                    }
+                    Calendar selected = Calendar.getInstance();
+                    selected.set(selectedDate.getYear(), selectedDate.getMonthValue() - 1, selectedDate.getDayOfMonth());
+                    try {
+                        binding.calendarView.setDate(selected);
+                        binding.calendarView2.setDate(selected);
+                    } catch (OutOfDateRangeException e) {
+                        e.printStackTrace();
+                    }
+                    binding.calendarView.setDisabledDays(calendars);
+                    binding.calendarView2.setDisabledDays(calendars);
+                });
+
+        binding.proceedButton.findViewById(R.id.proceedButton).setOnClickListener(v -> {
+            FragmentManager manager = getParentFragmentManager();
+            MyFragmentFactory factory = (MyFragmentFactory) manager.getFragmentFactory();
+            Calendar startDate = binding.calendarView.getFirstSelectedDate();
+            Calendar endDate = binding.calendarView2.getFirstSelectedDate();
+            factory.setStartDate(startDate.toInstant().toEpochMilli());
+            factory.setEndDate(endDate.toInstant().toEpochMilli());
+            manager.beginTransaction()
                     .replace(R.id.fragment_container_view, CheckoutFragment.class, null)
                     .setReorderingAllowed(true)
                     .addToBackStack(null) // name can be null
                     .commit();
         });
-        return view;
+        return binding.getRoot();
     }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        MainActivity activity = (MainActivity) getActivity();
+        activity.showBackButton(true);
+        activity.updateBackButton();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        MainActivity activity = (MainActivity) getActivity();
+        activity.showBackButton(false);
+    }
+
 }

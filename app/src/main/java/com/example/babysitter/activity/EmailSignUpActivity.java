@@ -64,7 +64,8 @@ public class EmailSignUpActivity extends AppCompatActivity {
         map.put("email", email);
         map.put("phone", phone);
         map.put("address", address);
-        map.put("profile", "avatar.png");
+        int number = (int) (Math.random() * 7);
+        map.put("profile", number + ".png");
 
         if (type.equalsIgnoreCase("babysitter")) {
             String description = binding.descriptionTextField.getEditText().getText().toString();

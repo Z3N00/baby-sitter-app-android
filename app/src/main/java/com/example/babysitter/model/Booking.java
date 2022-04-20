@@ -17,6 +17,7 @@ public class Booking implements Serializable {
     public String parent;
     public String profile;
     public Boolean accepted;
+    public boolean review;
 
     Booking() {
     }

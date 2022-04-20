@@ -1,44 +1,62 @@
-package com.example.babysitter;
+package com.example.babysitter.adapter;
+
+import static com.example.babysitter.Utils.generateImageUrl;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
 import com.example.babysitter.databinding.ItemBabySitterBinding;
-import com.example.babysitter.placeholder.PlaceholderContent.PlaceholderItem;
+import com.example.babysitter.fragment.BabySitterDetailsFragment;
+import com.example.babysitter.activity.MyFragmentFactory;
+import com.example.babysitter.R;
+import com.example.babysitter.model.BabySitter;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-/**
- * {@link RecyclerView.Adapter} that can display a {@link PlaceholderItem}.
- * TODO: Replace the implementation with code for your data type.
- */
 public class BabySitterRecyclerViewAdapter extends RecyclerView.Adapter<BabySitterRecyclerViewAdapter.ViewHolder> {
 
-    private final List<PlaceholderItem> mValues;
-    private FragmentManager manager;
+    private final List<BabySitter> mValues;
+    private final FragmentManager manager;
 
-    public BabySitterRecyclerViewAdapter(List<PlaceholderItem> items, FragmentManager manager) {
+    public BabySitterRecyclerViewAdapter(List<BabySitter> items, FragmentManager manager) {
         mValues = items;
         this.manager = manager;
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-
         return new ViewHolder(ItemBabySitterBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false).getRoot());
-
     }
 
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
-//        holder.mItem = mValues.get(position);
-//        holder.mIdView.setText(mValues.get(position).id);
-//        holder.mContentView.setText(mValues.get(position).content);
+        BabySitter sitter = mValues.get(position);
+        holder.name.setText(sitter.name);
+        if (sitter.ratingCount == 0) {
+            holder.rating.setText("No rating yet");
+        } else {
+            holder.rating.setText(String.format("%.2f", sitter.rating));
+        }
+        Picasso.get().setIndicatorsEnabled(true);
+        Picasso.get().load(generateImageUrl(sitter.profile)).into(holder.profile);
+        holder.itemView.findViewById(R.id.viewProfileButton).setOnClickListener(v -> {
+            MyFragmentFactory factory = (MyFragmentFactory) manager.getFragmentFactory();
+            factory.setSitter(sitter);
+            manager
+                    .beginTransaction()
+                    .replace(R.id.fragment_container_view, BabySitterDetailsFragment.class, null)
+                    .setReorderingAllowed(true)
+                    .addToBackStack(null) // name can be null
+                    .commit();
+        });
     }
 
     @Override
@@ -47,15 +65,14 @@ public class BabySitterRecyclerViewAdapter extends RecyclerView.Adapter<BabySitt
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
+        TextView name, rating;
+        ImageView profile;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            itemView.findViewById(R.id.viewProfileButton).setOnClickListener(v -> {
-                manager.beginTransaction()
-                        .replace(R.id.fragment_container_view, BabySitterDetailsFragment.class, null)
-                        .setReorderingAllowed(true)
-                        .addToBackStack(null) // name can be null
-                        .commit();
-            });
+            name = itemView.findViewById(R.id.babysitterName);
+            rating = itemView.findViewById(R.id.babysitterRating);
+            profile = itemView.findViewById(R.id.babysitterImage);
         }
     }
 }

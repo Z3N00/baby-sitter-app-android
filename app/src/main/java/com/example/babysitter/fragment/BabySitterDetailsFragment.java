@@ -1,47 +1,41 @@
-package com.example.babysitter;
+package com.example.babysitter.fragment;
+
+import static com.example.babysitter.Utils.generateImageUrl;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link BabySitterDetailsFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+
+import com.example.babysitter.R;
+import com.example.babysitter.activity.MainActivity;
+import com.example.babysitter.adapter.ReviewsRecyclerViewAdapter;
+import com.example.babysitter.databinding.FragmentBabySitterDetailsBinding;
+import com.example.babysitter.model.BabySitter;
+import com.example.babysitter.model.Review;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QuerySnapshot;
+import com.squareup.picasso.Picasso;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class BabySitterDetailsFragment extends Fragment {
+    private BabySitter sitter;
+    private FragmentBabySitterDetailsBinding binding;
+    private ReviewsRecyclerViewAdapter adapter;
+    List<Review> reviews = new ArrayList<>();
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    public BabySitterDetailsFragment() { }
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public BabySitterDetailsFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment BabySitterDetailsFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static BabySitterDetailsFragment newInstance(String param1, String param2) {
+    public static BabySitterDetailsFragment newInstance(BabySitter sitter) {
         BabySitterDetailsFragment fragment = new BabySitterDetailsFragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
+        args.putSerializable("sitter", sitter);
         fragment.setArguments(args);
         return fragment;
     }
@@ -50,30 +44,90 @@ public class BabySitterDetailsFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+            sitter = (BabySitter) getArguments().getSerializable("sitter");
         }
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_baby_sitter_details, container, false);
-        view.findViewById(R.id.check_availiability).setOnClickListener(v ->
+        binding = FragmentBabySitterDetailsBinding.inflate(inflater, container, false);
+        binding.babysitterAddress.setText(sitter.address);
+        binding.babysitterName.setText(sitter.name);
+        binding.babysitterDescription.setText(sitter.description);
+
+        Picasso.get().load(generateImageUrl(sitter.profile)).into(binding.babysitterImage);
+
+        binding.list.setLayoutManager(new LinearLayoutManager(binding.list.getContext()));
+        adapter = new ReviewsRecyclerViewAdapter(reviews);
+        binding.list.setAdapter(adapter);
+        refreshUI();
+
+        binding.checkAvailiability.setOnClickListener(v ->
                 getParentFragmentManager().beginTransaction()
-                    .replace(R.id.fragment_container_view, AvailabilityFragment.class, null)
-                    .setReorderingAllowed(true)
-                    .addToBackStack(null) // name can be null
-                    .commit()
+                        .replace(R.id.fragment_container_view, AvailabilityFragment.class, null)
+                        .setReorderingAllowed(true)
+                        .addToBackStack(null) // name can be null
+                        .commit()
         );
-        view.findViewById(R.id.view_reviews).setOnClickListener(v ->
+        binding.viewReviews.setOnClickListener(v ->
                 getParentFragmentManager().beginTransaction()
                         .replace(R.id.fragment_container_view, ReviewsFragment.class, null)
                         .setReorderingAllowed(true)
                         .addToBackStack(null) // name can be null
                         .commit()
         );
-        return view;
+        return binding.getRoot();
     }
+
+    private void refreshUI() {
+        if (sitter.ratingCount == 0) {
+            binding.babysitterRating.setText("No rating yet");
+        } else {
+            binding.babysitterRating.setText(String.format("%.2f", sitter.rating));
+        }
+        FirebaseFirestore
+                .getInstance()
+                .collection("reviews")
+                .get()
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        reviews.clear();
+                        QuerySnapshot snap = task.getResult();
+                        for (Review review : snap.toObjects(Review.class)) {
+                            if (review.babysitter.equalsIgnoreCase(sitter.ref) && reviews.size() <= 2) {
+                                reviews.add(review);
+                            }
+                        }
+                        adapter.notifyDataSetChanged();
+                    }
+                });
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        MainActivity activity = (MainActivity) getActivity();
+        activity.showBackButton(true);
+        activity.updateBackButton();
+        FirebaseFirestore
+                .getInstance()
+                .collection("babysitters")
+                .document(sitter.ref)
+                .get()
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        sitter = task.getResult().toObject(BabySitter.class);
+                        refreshUI();
+                    }
+                });
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        MainActivity activity = (MainActivity) getActivity();
+        activity.showBackButton(false);
+    }
+
 }

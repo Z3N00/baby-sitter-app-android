@@ -1,42 +1,31 @@
-package com.example.babysitter;
+package com.example.babysitter.fragment;
 
 import android.content.Context;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.babysitter.placeholder.PlaceholderContent;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
-/**
- * A fragment representing a list of Items.
- */
+import com.example.babysitter.adapter.ChatMessageRecyclerViewAdapter;
+import com.example.babysitter.databinding.FragmentChatListBinding;
+import com.example.babysitter.model.ChatMessage;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class ChatMessageFragment extends Fragment {
+    private final List<ChatMessage> messages = new ArrayList<>();
 
-    // TODO: Customize parameter argument names
-    private static final String ARG_COLUMN_COUNT = "column-count";
-    // TODO: Customize parameters
-    private int mColumnCount = 1;
-
-    /**
-     * Mandatory empty constructor for the fragment manager to instantiate the
-     * fragment (e.g. upon screen orientation changes).
-     */
     public ChatMessageFragment() {
     }
 
-    // TODO: Customize parameter initialization
-    @SuppressWarnings("unused")
-    public static ChatMessageFragment newInstance(int columnCount) {
+    public static ChatMessageFragment newInstance() {
         ChatMessageFragment fragment = new ChatMessageFragment();
         Bundle args = new Bundle();
-        args.putInt(ARG_COLUMN_COUNT, columnCount);
         fragment.setArguments(args);
         return fragment;
     }
@@ -44,28 +33,23 @@ public class ChatMessageFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         if (getArguments() != null) {
-            mColumnCount = getArguments().getInt(ARG_COLUMN_COUNT);
         }
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_chat_list, container, false);
+        FragmentChatListBinding binding = FragmentChatListBinding.inflate(inflater, container, false);
 
-        // Set the adapter
-        if (view instanceof RecyclerView) {
-            Context context = view.getContext();
-            RecyclerView recyclerView = (RecyclerView) view;
-            if (mColumnCount <= 1) {
-                recyclerView.setLayoutManager(new LinearLayoutManager(context));
-            } else {
-                recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
-            }
-            recyclerView.setAdapter(new ChatMessageRecyclerViewAdapter(PlaceholderContent.ITEMS));
-        }
-        return view;
+        messages.add(new ChatMessage("Hey!", "Smith Jones", "avatar.png"));
+        messages.add(new ChatMessage("Sounds good, thanks", "Smith Jones", "avatar.png"));
+        messages.add(new ChatMessage("Awesome", "Phil Wilson", "review.png"));
+        messages.add(new ChatMessage("That's great!", "Phil Jones", "review.png"));
+        messages.add(new ChatMessage("Unsure, lets not do that.", "Lucifer", "review.png"));
+        Context context = binding.getRoot().getContext();
+        binding.list.setLayoutManager(new LinearLayoutManager(context));
+        binding.list.setAdapter(new ChatMessageRecyclerViewAdapter(messages));
+        return binding.getRoot();
     }
 }

@@ -18,6 +18,7 @@ import java.util.List;
 
 public class MyFragmentFactory extends FragmentFactory {
     private BabySitter sitter;
+    private Booking booking;
     private Parent parent;
     private long startDate, endDate;
 
@@ -39,6 +40,8 @@ public class MyFragmentFactory extends FragmentFactory {
 
     public void setParent(Parent parent) { this.parent = parent; }
 
+    public void setBooking(Booking booking) { this.booking = booking; }
+
     @NonNull
     @Override
     public Fragment instantiate(@NonNull ClassLoader classLoader, @NonNull String className) {
@@ -50,7 +53,7 @@ public class MyFragmentFactory extends FragmentFactory {
         } else if (fragmentClass == AvailabilityFragment.class) {
             return AvailabilityFragment.newInstance(sitter);
         } else if (fragmentClass == AddReviewFragment.class) {
-            return AddReviewFragment.newInstance(sitter, parent);
+            return AddReviewFragment.newInstance(booking, parent);
         } else if (fragmentClass == CheckoutFragment.class) {
             return CheckoutFragment.newInstance(sitter, startDate, endDate);
         } else {

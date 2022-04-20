@@ -37,6 +37,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                             intent.putExtra("type", "parent");
                             intent.putExtra("parent", task.getResult().toObject(Parent.class));
                             startActivity(intent);
+                            finish();
                         }
                     });
             FirebaseFirestore
@@ -50,6 +51,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                             intent.putExtra("type", "babysitter");
                             intent.putExtra("sitter", task.getResult().toObject(BabySitter.class));
                             startActivity(intent);
+                            finish();
                         }
                     });
         }

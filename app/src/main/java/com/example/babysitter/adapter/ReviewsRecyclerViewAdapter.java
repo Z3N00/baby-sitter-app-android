@@ -1,41 +1,42 @@
-package com.example.babysitter;
+package com.example.babysitter.adapter;
 
-import androidx.recyclerview.widget.RecyclerView;
+import static com.example.babysitter.Utils.generateImageUrl;
 
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
-import com.example.babysitter.placeholder.PlaceholderContent.PlaceholderItem;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.babysitter.databinding.ItemReviewBinding;
+import com.example.babysitter.model.Review;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-/**
- * {@link RecyclerView.Adapter} that can display a {@link PlaceholderItem}.
- * TODO: Replace the implementation with code for your data type.
- */
 public class ReviewsRecyclerViewAdapter extends RecyclerView.Adapter<ReviewsRecyclerViewAdapter.ViewHolder> {
 
-    private final List<PlaceholderItem> mValues;
+    private final List<Review> mValues;
 
-    public ReviewsRecyclerViewAdapter(List<PlaceholderItem> items) {
+    public ReviewsRecyclerViewAdapter(List<Review> items) {
         mValues = items;
     }
 
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new ViewHolder(ItemReviewBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false));
-
     }
 
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
-//        holder.mItem = mValues.get(position);
-//        holder.mIdView.setText(mValues.get(position).id);
-//        holder.mContentView.setText(mValues.get(position).content);
+        Review review = mValues.get(position);
+        holder.binding.content.setText(review.description);
+        holder.binding.reviewerName.setText(review.name);
+        Picasso.get().setLoggingEnabled(true);
+        Picasso
+                .get()
+                .load(generateImageUrl(review.profile))
+                .into(holder.binding.shapeableImageView);
     }
 
     @Override
@@ -43,15 +44,12 @@ public class ReviewsRecyclerViewAdapter extends RecyclerView.Adapter<ReviewsRecy
         return mValues.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
-//        public final TextView mIdView;
-//        public final TextView mContentView;
-//        public PlaceholderItem mItem;
+    public static class ViewHolder extends RecyclerView.ViewHolder {
+        public ItemReviewBinding binding;
 
         public ViewHolder(ItemReviewBinding binding) {
             super(binding.getRoot());
-//            mIdView = binding.reviewerName;
-//            mContentView = binding.content;
+            this.binding = binding;
         }
 
     }

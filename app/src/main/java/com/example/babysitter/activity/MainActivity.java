@@ -3,7 +3,9 @@ package com.example.babysitter.activity;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager2.widget.ViewPager2;
 
+import com.example.babysitter.R;
 import com.example.babysitter.databinding.ActivityMainParentsBinding;
 import com.example.babysitter.model.BabySitter;
 import com.example.babysitter.model.Parent;
@@ -17,8 +19,9 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ActivityMainParentsBinding binding;
+    public ActivityMainParentsBinding binding;
     private MyFragmentFactory factory = new MyFragmentFactory();
+    private boolean show;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,4 +58,21 @@ public class MainActivity extends AppCompatActivity {
         }).attach();
     }
 
+    public void showBackButton(boolean show) {
+        this.show = show;
+    }
+
+    public void updateBackButton() {
+        if (show) {
+            binding.title.setNavigationIcon(R.drawable.ic_action_back);
+        } else {
+            binding.title.setNavigationIcon(null);
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        updateBackButton();
+    }
 }
