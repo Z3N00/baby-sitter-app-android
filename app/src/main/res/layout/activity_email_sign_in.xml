@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EmailSignInActivity">
+    tools:context=".activity.EmailSignInActivity">
 
     <TextView
         android:id="@+id/textView4"
@@ -81,7 +81,7 @@
         app:layout_constraintTop_toBottomOf="@+id/passwordTextFieldLogin" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/forgotPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"

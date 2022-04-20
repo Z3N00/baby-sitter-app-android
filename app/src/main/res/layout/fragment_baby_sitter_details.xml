@@ -5,32 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".BabySitterDetailsFragment">
+    tools:context=".fragment.BabySitterDetailsFragment">
 
     <TextView
-        android:id="@+id/babysitterRating2"
+        android:id="@+id/babysitterRating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="@string/placeholder_rating"
+        android:text=""
+        app:drawableStartCompat="@drawable/ic_action_star"
         android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
         android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="@+id/babysitterName2"
-        app:layout_constraintTop_toBottomOf="@+id/babysitterName2" />
+        app:layout_constraintStart_toStartOf="@+id/babysitterName"
+        app:layout_constraintTop_toBottomOf="@+id/babysitterName" />
 
     <TextView
-        android:id="@+id/babysitterRating3"
+        android:id="@+id/babysitterAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/placeholder_address"
         android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
         android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="@+id/babysitterName2"
-        app:layout_constraintTop_toBottomOf="@+id/babysitterRating2" />
+        app:layout_constraintStart_toStartOf="@+id/babysitterName"
+        app:layout_constraintTop_toBottomOf="@+id/babysitterRating" />
 
     <TextView
-        android:id="@+id/babysitterName2"
+        android:id="@+id/babysitterName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -50,14 +51,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/babysitterDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:textColor="@color/black"
         android:text="@string/description"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/babysitterImage" />
@@ -66,25 +67,49 @@
         android:id="@+id/view_reviews"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:text="View Reviews"
+        android:text="View All"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/babysitterDescription" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/check_availiability"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:text="Check Availability"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="251dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Reviews"
+        android:textColor="@color/black"
+        android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view_reviews" />
+        app:layout_constraintTop_toBottomOf="@+id/babysitterDescription" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/check_availiability"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        tools:listitem="@layout/item_review" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
